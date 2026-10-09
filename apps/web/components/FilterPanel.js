@@ -10,6 +10,14 @@ const roleOptions = [
   { label: 'Other', value: 'OTHER' },
 ];
 
+const degreeOptions = [
+  { label: 'B.Tech / B.E.', value: 'BTECH', icon: '🎓' },
+  { label: 'M.Tech / M.E. / MS', value: 'MTECH', icon: '🎓' },
+  { label: 'BCA / MCA', value: 'BCA_MCA', icon: '💻' },
+  { label: 'B.Sc / M.Sc', value: 'BSC_MSC', icon: '📊' },
+  { label: 'PhD / Doctoral', value: 'PHD', icon: '🔬' },
+];
+
 export default function FilterPanel({ filters, onFilterChange }) {
   const { data: companiesData } = useQuery({
     queryKey: ['companies-filter'],
@@ -92,6 +100,38 @@ export default function FilterPanel({ filters, onFilterChange }) {
                 }}
               />
               {label}
+            </label>
+          ))}
+        </div>
+      </div>
+
+      {/* Target Degree / Student Eligibility */}
+      <div className="mb-6">
+        <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center justify-between">
+          <span>Target Degree / Eligibility</span>
+          {filters.degrees?.length > 0 && (
+            <span className="text-[11px] font-semibold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded">
+              {filters.degrees.length} selected
+            </span>
+          )}
+        </h3>
+        <div className="space-y-2">
+          {degreeOptions.map(({ label, value, icon }) => (
+            <label key={value} className="flex items-center text-sm text-gray-600 hover:text-gray-900 cursor-pointer">
+              <input
+                type="checkbox"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 mr-2"
+                checked={filters.degrees?.includes(value) || false}
+                onChange={(e) => {
+                  const current = filters.degrees || [];
+                  const newDegrees = e.target.checked
+                    ? [...current, value]
+                    : current.filter(d => d !== value);
+                  onFilterChange('degrees', newDegrees);
+                }}
+              />
+              <span className="mr-1.5">{icon}</span>
+              <span>{label}</span>
             </label>
           ))}
         </div>

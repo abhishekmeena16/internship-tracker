@@ -195,6 +195,24 @@ export default function InternshipCard({ internship }) {
           )}
         </div>
 
+        {/* Target Degrees Badges */}
+        {internship.targetDegrees && internship.targetDegrees.length > 0 && (
+          <div className="flex items-center flex-wrap gap-1 mb-2.5">
+            <span className="text-[11px] text-gray-400 font-medium mr-0.5">Eligible:</span>
+            {internship.targetDegrees.slice(0, 3).map(deg => (
+              <span
+                key={deg}
+                className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200"
+              >
+                {deg === 'BTECH' ? 'B.Tech / BE' : deg === 'MTECH' ? 'M.Tech / MS' : deg === 'BCA' ? 'BCA' : deg === 'MCA' ? 'MCA' : deg === 'BSC' ? 'B.Sc' : deg === 'MSC' ? 'M.Sc' : deg === 'PHD' ? 'PhD' : deg}
+              </span>
+            ))}
+            {internship.targetDegrees.length > 3 && (
+              <span className="text-[10px] text-gray-500 font-medium">+{internship.targetDegrees.length - 3}</span>
+            )}
+          </div>
+        )}
+
         {skills && skills.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mb-2">
             {skills.slice(0, 4).map(skill => (

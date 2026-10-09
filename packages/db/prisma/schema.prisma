@@ -69,6 +69,7 @@ model Internship {
   durationMonths  Int?
   skills          String[]
   eligibility     String?
+  targetDegrees   String[]          @default([])
   deadline        DateTime?
   postedAt        DateTime?
   applyUrl        String

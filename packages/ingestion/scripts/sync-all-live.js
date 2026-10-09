@@ -9,7 +9,7 @@ dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 
 import { prisma } from '../../db/index.js';
 import { classifyRole } from '../normalize/classifier.js';
-import { extractSkills, extractStipend, extractDuration, extractEligibility } from '../normalize/extractor.js';
+import { extractSkills, extractStipend, extractDuration, extractEligibility, extractTargetDegrees } from '../normalize/extractor.js';
 import { cleanDescription } from '../normalize/cleaner.js';
 import { generateHash } from '../lib/hash.js';
 import { verifyUrl } from '../lib/urlVerifier.js';
@@ -479,6 +479,7 @@ export async function syncAllLive() {
     const stipend = extractStipend(j.description, j.companyName, role);
     const duration = extractDuration(j.description);
     const eligibility = extractEligibility(j.description);
+    const targetDegrees = extractTargetDegrees(eligibility, j.title, j.description);
     const skills = extractSkills(j.title, j.description, role);
     const cleanedDesc = cleanDescription(j.description, j.companyName, j.title, role);
     const isRemote = /remote|work from home/i.test(`${j.title} ${j.location}`);
@@ -500,6 +501,7 @@ export async function syncAllLive() {
         currency: 'INR',
         durationMonths: duration || 6,
         eligibility,
+        targetDegrees,
         deadline,
         status: 'OPEN',
         source: j.source || 'LIVE_ATS',
@@ -522,6 +524,7 @@ export async function syncAllLive() {
         currency: 'INR',
         durationMonths: duration || 6,
         eligibility,
+        targetDegrees,
         deadline,
         postedAt: j.postedAt,
         status: 'OPEN',

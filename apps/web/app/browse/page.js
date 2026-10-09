@@ -34,6 +34,7 @@ function HomeContent() {
   useEffect(() => {
     const qParam = searchParams.get('q');
     const roleParam = searchParams.get('role');
+    const degreeParam = searchParams.get('degree');
     const locParam = searchParams.get('location');
     const remoteParam = searchParams.get('remote');
     const companyParam = searchParams.get('company');
@@ -48,6 +49,7 @@ function HomeContent() {
       if (locParam) next.location = locParam;
       if (remoteParam !== null && remoteParam !== undefined) next.remoteOnly = remoteParam === 'true';
       if (roleParam) next.roles = roleParam.split(',').filter(Boolean);
+      if (degreeParam) next.degrees = degreeParam.split(',').filter(Boolean);
       return next;
     });
   }, [searchParams]);
@@ -60,6 +62,7 @@ function HomeContent() {
     remote: filters.remoteOnly ? 'true' : undefined,
     minStipend: filters.minStipend || undefined,
     role: filters.roles?.length ? filters.roles.join(',') : undefined,
+    degree: filters.degrees?.length ? filters.degrees.join(',') : undefined,
     duration: filters.duration || undefined,
     company: filters.company || undefined,
     sort: sort || 'newest',
@@ -95,6 +98,11 @@ function HomeContent() {
         ...prev,
         roles: (prev.roles || []).filter(r => r !== valueToRemove)
       }));
+    } else if (key === 'degrees' && valueToRemove) {
+      setFilters(prev => ({
+        ...prev,
+        degrees: (prev.degrees || []).filter(d => d !== valueToRemove)
+      }));
     } else {
       setFilters(prev => {
         const next = { ...prev };
@@ -117,6 +125,7 @@ function HomeContent() {
     filters.remoteOnly ||
     filters.minStipend ||
     (filters.roles && filters.roles.length > 0) ||
+    (filters.degrees && filters.degrees.length > 0) ||
     filters.duration ||
     filters.company
   );
@@ -217,6 +226,21 @@ function HomeContent() {
                     <button onClick={() => removeFilter('roles', r)} className="hover:text-purple-950 font-bold ml-1">×</button>
                   </span>
                 ))}
+                {filters.degrees?.map(d => {
+                  const degreeLabels = {
+                    BTECH: 'B.Tech / B.E.',
+                    MTECH: 'M.Tech / MS',
+                    BCA_MCA: 'BCA / MCA',
+                    BSC_MSC: 'B.Sc / M.Sc',
+                    PHD: 'PhD / Doctoral'
+                  };
+                  return (
+                    <span key={d} className="bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded-md flex items-center gap-1 font-medium">
+                      Degree: {degreeLabels[d] || d}
+                      <button onClick={() => removeFilter('degrees', d)} className="hover:text-indigo-950 font-bold ml-1">×</button>
+                    </span>
+                  );
+                })}
                 {filters.minStipend && (
                   <span className="bg-amber-100 text-amber-800 px-2.5 py-1 rounded-md flex items-center gap-1 font-medium">
                     Min ₹{Number(filters.minStipend).toLocaleString()}

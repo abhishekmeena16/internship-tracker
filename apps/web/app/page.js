@@ -95,6 +95,26 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+
+          {/* Quick Degree Filter Chips */}
+          <div className="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm text-blue-100 mt-2.5">
+            <span className="text-amber-300 font-semibold mr-1">Filter by Degree:</span>
+            {[
+              { label: '🎓 B.Tech / B.E.', path: '/browse?degree=BTECH' },
+              { label: '🎓 M.Tech / MS', path: '/browse?degree=MTECH' },
+              { label: '💻 BCA / MCA', path: '/browse?degree=BCA_MCA' },
+              { label: '📊 B.Sc / M.Sc', path: '/browse?degree=BSC_MSC' },
+              { label: '🔬 PhD Research', path: '/browse?degree=PHD' },
+            ].map((chip) => (
+              <Link 
+                key={chip.label} 
+                href={chip.path}
+                className="bg-indigo-950/70 hover:bg-indigo-800/90 border border-indigo-600/60 px-3 py-1 rounded-full transition-all font-medium hover:scale-105"
+              >
+                {chip.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

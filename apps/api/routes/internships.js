@@ -11,7 +11,7 @@ const router = Router();
 router.get('/', async (req, res, next) => {
   try {
     const {
-      q, role, location, remote, minStipend, duration, company,
+      q, role, location, remote, minStipend, duration, company, degree,
       status = 'OPEN', sort
     } = req.query;
 
@@ -60,6 +60,43 @@ router.get('/', async (req, res, next) => {
         where.roleCategory = validRoles[0];
       } else if (validRoles.length > 1) {
         where.roleCategory = { in: validRoles };
+      }
+    }
+
+    // Degree / Education Eligibility validation
+    const DEGREE_MAP = {
+      'BTECH': ['BTECH'],
+      'BE': ['BTECH'],
+      'MTECH': ['MTECH'],
+      'ME': ['MTECH'],
+      'MS': ['MTECH'],
+      'PHD': ['PHD'],
+      'DOCTORAL': ['PHD'],
+      'BCA': ['BCA'],
+      'MCA': ['MCA'],
+      'BCA_MCA': ['BCA', 'MCA'],
+      'BSC': ['BSC'],
+      'MSC': ['MSC'],
+      'BSC_MSC': ['BSC', 'MSC']
+    };
+
+    if (degree) {
+      const rawDegrees = Array.isArray(degree) ? degree : String(degree).split(',');
+      const requestedDegrees = [];
+      rawDegrees.forEach(d => {
+        const upper = String(d).trim().toUpperCase();
+        if (DEGREE_MAP[upper]) {
+          requestedDegrees.push(...DEGREE_MAP[upper]);
+        } else if (['BTECH', 'MTECH', 'PHD', 'BCA', 'MCA', 'BSC', 'MSC'].includes(upper)) {
+          requestedDegrees.push(upper);
+        }
+      });
+
+      const uniqueDegrees = [...new Set(requestedDegrees)];
+      if (uniqueDegrees.length > 0) {
+        where.targetDegrees = {
+          hasSome: uniqueDegrees
+        };
       }
     }
 

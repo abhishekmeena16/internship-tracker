@@ -48,10 +48,20 @@ router.get('/', async (req, res, next) => {
       }
     });
 
+    // Degrees filter options
+    const degrees = [
+      { label: 'B.Tech / B.E.', value: 'BTECH' },
+      { label: 'M.Tech / M.E. / MS', value: 'MTECH' },
+      { label: 'BCA / MCA', value: 'BCA_MCA' },
+      { label: 'B.Sc / M.Sc', value: 'BSC_MSC' },
+      { label: 'PhD / Research', value: 'PHD' }
+    ];
+
     res.json({
       roles,
       locations,
-      companies
+      companies,
+      degrees
     });
   } catch (error) {
     next(error);

@@ -214,3 +214,61 @@ export function extractSkills(title = '', description = '', roleCategory = 'SDE'
 
   return ['Problem Solving', 'Data Structures', 'Communication', 'Teamwork'];
 }
+
+/**
+ * Extract target degrees from eligibility, title, and description.
+ * @param {string} eligibility
+ * @param {string} title
+ * @param {string} description
+ * @returns {string[]} List of degrees (e.g. ['BTECH', 'MTECH', 'BCA', 'MCA', 'BSC', 'MSC', 'PHD'])
+ */
+export function extractTargetDegrees(eligibility = '', title = '', description = '') {
+  const combined = `${eligibility || ''} ${title || ''} ${description || ''}`.toLowerCase();
+  const degrees = new Set();
+
+  if (/\b(ph\.?d|doctorate|doctoral|research intern \(phd\))\b/i.test(combined)) {
+    degrees.add('PHD');
+  }
+
+  if (/\b(m\.?tech|m\.?e\b|master|masters|ms\b|postgrad|postgraduate|m\.s\b|dual degree)\b/i.test(combined)) {
+    degrees.add('MTECH');
+  }
+
+  if (/\b(b\.?tech|b\.?e\b|bachelor|bachelors|undergrad|undergraduate)\b/i.test(combined) || degrees.size === 0) {
+    degrees.add('BTECH');
+  }
+
+  if (/\b(bca|mca|computer applications)\b/i.test(combined)) {
+    if (/\bmca\b/i.test(combined)) degrees.add('MCA');
+    if (/\bbca\b/i.test(combined)) degrees.add('BCA');
+  }
+
+  if (/\b(b\.?sc|m\.?sc|bachelor of science|master of science)\b/i.test(combined)) {
+    if (/\b(m\.?sc|master of science)\b/i.test(combined)) degrees.add('MSC');
+    if (/\b(b\.?sc|bachelor of science)\b/i.test(combined)) degrees.add('BSC');
+  }
+
+  if (/\bbachelor(?:'s)?\b/i.test(combined) || /\bundergrad/i.test(combined)) {
+    degrees.add('BTECH');
+    degrees.add('BCA');
+    degrees.add('BSC');
+  }
+  if (/\bmaster(?:'s)?\b/i.test(combined) || /\bpostgrad/i.test(combined) || /\bdual degree\b/i.test(combined)) {
+    degrees.add('MTECH');
+    degrees.add('MCA');
+    degrees.add('MSC');
+  }
+
+  if (!degrees.has('PHD')) {
+    degrees.add('BTECH');
+    if (/computer science|information technology|\bcse\b|\bit\b|software/i.test(combined)) {
+      degrees.add('MTECH');
+      degrees.add('BCA');
+      degrees.add('MCA');
+      degrees.add('BSC');
+      degrees.add('MSC');
+    }
+  }
+
+  return Array.from(degrees);
+}

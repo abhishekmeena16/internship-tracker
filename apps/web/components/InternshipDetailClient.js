@@ -218,10 +218,25 @@ export default function InternshipDetailClient({ internship }) {
             </div>
           )}
 
-          {eligibility && (
-            <div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Eligibility</h3>
-              <p className="text-gray-700 whitespace-pre-wrap leading-relaxed">{eligibility}</p>
+          {(eligibility || (internship.targetDegrees && internship.targetDegrees.length > 0)) && (
+            <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-5">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Eligibility & Target Students</h3>
+              {internship.targetDegrees && internship.targetDegrees.length > 0 && (
+                <div className="flex items-center flex-wrap gap-2 mb-3">
+                  <span className="text-xs font-semibold text-gray-500">Target Degrees:</span>
+                  {internship.targetDegrees.map(deg => (
+                    <span
+                      key={deg}
+                      className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 border border-blue-200"
+                    >
+                      🎓 {deg === 'BTECH' ? 'B.Tech / B.E.' : deg === 'MTECH' ? 'M.Tech / M.E. / MS' : deg === 'BCA' ? 'BCA' : deg === 'MCA' ? 'MCA' : deg === 'BSC' ? 'B.Sc' : deg === 'MSC' ? 'M.Sc' : deg === 'PHD' ? 'PhD / Doctorate' : deg}
+                    </span>
+                  ))}
+                </div>
+              )}
+              {eligibility && (
+                <p className="text-gray-700 whitespace-pre-wrap leading-relaxed text-sm">{eligibility}</p>
+              )}
             </div>
           )}
 
