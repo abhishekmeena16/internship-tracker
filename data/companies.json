@@ -1,0 +1,2802 @@
+[
+  {
+    "name": "Google",
+    "careerUrl": "https://www.google.com/about/careers/applications/jobs/results/?q=intern&location=India",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "google",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Amazon",
+    "careerUrl": "https://www.amazon.jobs/en/search?base_query=intern&loc_query=India",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "amazon",
+    "hqCity": "Mumbai",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Microsoft",
+    "careerUrl": "https://careers.microsoft.com/v2/global/en/home.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "microsoft",
+    "hqCity": "Chennai",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Meta",
+    "careerUrl": "https://www.metacareers.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "meta",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Apple",
+    "careerUrl": "https://jobs.apple.com/en-in/search",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "apple",
+    "hqCity": "New Delhi",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Netflix",
+    "careerUrl": "https://jobs.netflix.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "netflix",
+    "hqCity": "Gurgaon",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Adobe",
+    "careerUrl": "https://careers.adobe.com/us/en",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "adobe",
+    "hqCity": "Gurgaon",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Salesforce",
+    "careerUrl": "https://www.salesforce.com/company/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "salesforce",
+    "hqCity": "Gurgaon",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Oracle",
+    "careerUrl": "https://www.oracle.com/corporate/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "oracle",
+    "hqCity": "Gurgaon",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "IBM",
+    "careerUrl": "https://www.ibm.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ibm",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Cisco",
+    "careerUrl": "https://jobs.cisco.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cisco",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Broadcom (VMware)",
+    "careerUrl": "https://broadcom.wd1.myworkdayjobs.com/External_Career",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "broadcom-vmware",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Uber",
+    "careerUrl": "https://www.uber.com/in/en/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "uber",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "ServiceNow",
+    "careerUrl": "https://www.servicenow.com/company/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "servicenow",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Atlassian",
+    "careerUrl": "https://www.atlassian.com/company/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "atlassian",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Intuit",
+    "careerUrl": "https://www.intuit.com/careers/students/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "intuit",
+    "hqCity": "Pune",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "PayPal",
+    "careerUrl": "https://careers.pypl.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "paypal",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Nutanix",
+    "careerUrl": "https://www.nutanix.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "nutanix",
+    "hqCity": "Pune",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Splunk",
+    "careerUrl": "https://www.splunk.com/en_us/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "splunk",
+    "hqCity": "Gurgaon",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Twilio",
+    "careerUrl": "https://www.twilio.com/en-us/company/jobs",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "twilio",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Autodesk",
+    "careerUrl": "https://www.autodesk.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "autodesk",
+    "hqCity": "Pune",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Synopsys",
+    "careerUrl": "https://www.synopsys.com/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "synopsys",
+    "hqCity": "Noida",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Cadence",
+    "careerUrl": "https://cadence.wd1.myworkdayjobs.com/External_Careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cadence",
+    "hqCity": "Chennai",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "ARM",
+    "careerUrl": "https://careers.arm.com/search-jobs/India/intern",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "arm",
+    "hqCity": "Chennai",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "NetApp",
+    "careerUrl": "https://netapp.wd1.myworkdayjobs.com/Careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "netapp",
+    "hqCity": "Hyderabad",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "LinkedIn",
+    "careerUrl": "https://www.linkedin.com/company/linkedin/jobs/",
+    "atsType": "LEVER",
+    "atsIdentifier": "linkedin",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "SAP Labs India",
+    "careerUrl": "https://jobs.sap.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sap-labs-india",
+    "hqCity": "Pune",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Goldman Sachs",
+    "careerUrl": "https://www.goldmansachs.com/careers/students/index.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "goldman-sachs",
+    "hqCity": "Chennai",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "JPMorgan Chase",
+    "careerUrl": "https://careers.jpmorgan.com/global/en/home",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "jpmorgan-chase",
+    "hqCity": "Noida",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Morgan Stanley",
+    "careerUrl": "https://www.morganstanley.com/people-opportunities/students-graduates",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "morgan-stanley",
+    "hqCity": "Chennai",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "American Express",
+    "careerUrl": "https://www.americanexpress.com/en-us/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "american-express",
+    "hqCity": "Mumbai",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Visa",
+    "careerUrl": "https://www.visa.co.in/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "visa",
+    "hqCity": "Chennai",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Mastercard",
+    "careerUrl": "https://careers.mastercard.com/us/en",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "mastercard",
+    "hqCity": "Hyderabad",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Barclays",
+    "careerUrl": "https://home.barclays/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "barclays",
+    "hqCity": "Hyderabad",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Deutsche Bank",
+    "careerUrl": "https://careers.db.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "deutsche-bank",
+    "hqCity": "Bengaluru",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "UBS",
+    "careerUrl": "https://www.ubs.com/global/en/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ubs",
+    "hqCity": "Gurgaon",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "BlackRock",
+    "careerUrl": "https://careers.blackrock.com/early-careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "blackrock",
+    "hqCity": "Noida",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Wells Fargo",
+    "careerUrl": "https://www.wellsfargojobs.com/en/university-programs/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "wells-fargo",
+    "hqCity": "Chennai",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Razorpay",
+    "careerUrl": "https://razorpay.com/jobs/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "razorpaysoftwareprivatelimited",
+    "hqCity": "Pune",
+    "sector": "INDIAN STARTUPS"
+  },
+  {
+    "name": "PhonePe",
+    "careerUrl": "https://www.phonepe.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "phonepe",
+    "hqCity": "Noida",
+    "sector": "INDIAN STARTUPS"
+  },
+  {
+    "name": "Paytm",
+    "careerUrl": "https://paytm.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "paytm",
+    "hqCity": "Noida",
+    "sector": "INDIAN STARTUPS"
+  },
+  {
+    "name": "CRED",
+    "careerUrl": "https://careers.cred.club/",
+    "atsType": "LEVER",
+    "atsIdentifier": "cred",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN STARTUPS"
+  },
+  {
+    "name": "Zerodha",
+    "careerUrl": "https://careers.zerodha.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "zerodha",
+    "hqCity": "Noida",
+    "sector": "INDIAN STARTUPS"
+  },
+  {
+    "name": "Groww",
+    "careerUrl": "https://groww.in/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "groww",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN STARTUPS"
+  },
+  {
+    "name": "PolicyBazaar",
+    "careerUrl": "https://www.policybazaar.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "policybazaar",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN STARTUPS"
+  },
+  {
+    "name": "Qualcomm",
+    "careerUrl": "https://www.qualcomm.com/company/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "qualcomm",
+    "hqCity": "Mumbai",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Nvidia",
+    "careerUrl": "https://www.nvidia.com/en-in/about-nvidia/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "nvidia",
+    "hqCity": "Hyderabad",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Intel",
+    "careerUrl": "https://www.intel.com/content/www/us/en/jobs/jobs-at-intel.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "intel",
+    "hqCity": "Pune",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "AMD",
+    "careerUrl": "https://www.amd.com/en/corporate/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "amd",
+    "hqCity": "Pune",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Texas Instruments",
+    "careerUrl": "https://careers.ti.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "texas-instruments",
+    "hqCity": "Pune",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Samsung R&D Institute India",
+    "careerUrl": "https://research.samsung.com/sri-b",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "samsung-r-d-institute-india",
+    "hqCity": "New Delhi",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Micron Technology",
+    "careerUrl": "https://micron.wd1.myworkdayjobs.com/en-US/External",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "micron-technology",
+    "hqCity": "Sanand",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Western Digital",
+    "careerUrl": "https://jobs.westerndigital.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "western-digital",
+    "hqCity": "Chennai",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Arista Networks",
+    "careerUrl": "https://www.arista.com/en/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "arista-networks",
+    "hqCity": "Noida",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Juniper Networks",
+    "careerUrl": "https://www.juniper.net/us/en/company/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "juniper-networks",
+    "hqCity": "Chennai",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Marvell",
+    "careerUrl": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "marvell",
+    "hqCity": "Hyderabad",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Analog Devices",
+    "careerUrl": "https://analogdevices.wd1.myworkdayjobs.com/External",
+    "atsType": "ASHBY",
+    "atsIdentifier": "analog",
+    "hqCity": "Chennai",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Flipkart",
+    "careerUrl": "https://www.flipkartcareers.com/#!/joblist",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "flipkart",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Myntra",
+    "careerUrl": "https://careers.myntra.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "myntra",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Swiggy",
+    "careerUrl": "https://careers.swiggy.com/",
+    "atsType": "LEVER",
+    "atsIdentifier": "swiggy",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Zomato (Eternal)",
+    "careerUrl": "https://www.zomato.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "zomato",
+    "hqCity": "Pune",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Ola",
+    "careerUrl": "https://www.olacabs.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ola",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Rapido",
+    "careerUrl": "https://rapido.freshteam.com/jobs",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "rapido",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Meesho",
+    "careerUrl": "https://www.meesho.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "meesho",
+    "hqCity": "Chennai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Urban Company",
+    "careerUrl": "https://careers.urbancompany.com/",
+    "atsType": "LEVER",
+    "atsIdentifier": "urbancompany",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Nykaa",
+    "careerUrl": "https://www.nykaa.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "nykaa",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Lenskart",
+    "careerUrl": "https://hiring.lenskart.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "lenskart",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "MakeMyTrip",
+    "careerUrl": "https://careers.makemytrip.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "makemytrip",
+    "hqCity": "New Delhi",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Delhivery",
+    "careerUrl": "https://www.delhivery.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "delhivery",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Info Edge (Naukri.com)",
+    "careerUrl": "https://www.infoedge.in/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "info-edge-naukri-com",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "CarDekho",
+    "careerUrl": "https://www.cardekho.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cardekho",
+    "hqCity": "Pune",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Cars24",
+    "careerUrl": "https://www.cars24.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cars24",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Zoho",
+    "careerUrl": "https://www.zoho.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "zoho",
+    "hqCity": "Chennai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Freshworks",
+    "careerUrl": "https://careers.freshworks.com/",
+    "atsType": "LEVER",
+    "atsIdentifier": "freshworks",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Postman",
+    "careerUrl": "https://www.postman.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "postman",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "BrowserStack",
+    "careerUrl": "https://www.browserstack.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "browserstack",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Chargebee",
+    "careerUrl": "https://www.chargebee.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "chargebee",
+    "hqCity": "Chennai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Darwinbox",
+    "careerUrl": "https://darwinbox.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "darwinbox",
+    "hqCity": "Pune",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Innovaccer",
+    "careerUrl": "https://innovaccer.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "innovaccer",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Sprinklr",
+    "careerUrl": "https://www.sprinklr.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sprinklr",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "InMobi",
+    "careerUrl": "https://www.inmobi.com/company/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "inmobi",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Whatfix",
+    "careerUrl": "https://whatfix.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "whatfix",
+    "hqCity": "Chennai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Fractal Analytics",
+    "careerUrl": "https://fractal.ai/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "fractal-analytics",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "LatentView Analytics",
+    "careerUrl": "https://www.latentview.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "latentview-analytics",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Tredence",
+    "careerUrl": "https://www.tredence.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "tredence",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "ZS Associates",
+    "careerUrl": "https://www.zs.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "zs-associates",
+    "hqCity": "Pune",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Tiger Analytics",
+    "careerUrl": "https://www.tigeranalytics.com/careers/",
+    "atsType": "ASHBY",
+    "atsIdentifier": "tiger",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "EXL Service",
+    "careerUrl": "https://www.exlservice.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "exl-service",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Quantiphi",
+    "careerUrl": "https://quantiphi.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "quantiphi",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Walmart Global Tech",
+    "careerUrl": "https://careers.walmart.com/technology/engineering",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "walmart-global-tech",
+    "hqCity": "Gurgaon",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Target India",
+    "careerUrl": "https://india.target.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "target",
+    "hqCity": "Hyderabad",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Lowe's India",
+    "careerUrl": "https://corporate.lowes.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "lowe-s-india",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "GE (Aerospace/Vernova/HealthCare)",
+    "careerUrl": "https://www.geaerospace.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ge-aerospace-vernova-healthcare",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Siemens",
+    "careerUrl": "https://www.siemens.com/in/en/company/jobs.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "siemens",
+    "hqCity": "Noida",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Bosch Global Software Technologies",
+    "careerUrl": "https://www.bosch.in/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bosch-global-software-technologies",
+    "hqCity": "Chennai",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Philips Innovation Campus",
+    "careerUrl": "https://www.careers.philips.com/global/en",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "philips-innovation-campus",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "John Deere India",
+    "careerUrl": "https://www.deere.co.in/en/our-company/john-deere-careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "john-deere-india",
+    "hqCity": "Chennai",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Honeywell Technology Solutions",
+    "careerUrl": "https://careers.honeywell.com/us/en",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "honeywell-technology-solutions",
+    "hqCity": "Chennai",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "TCS",
+    "careerUrl": "https://www.tcs.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "tcs",
+    "hqCity": "Pune",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Infosys",
+    "careerUrl": "https://career.infosys.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "infosys",
+    "hqCity": "New Delhi",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Wipro",
+    "careerUrl": "https://www.wipro.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "wipro",
+    "hqCity": "Noida",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Cognizant",
+    "careerUrl": "https://careers.cognizant.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cognizant",
+    "hqCity": "Gurgaon",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Accenture",
+    "careerUrl": "https://www.accenture.com/in-en/careers/life-at-accenture/entry-level",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "accenture",
+    "hqCity": "Mumbai",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Capgemini",
+    "careerUrl": "https://www.capgemini.com/in-en/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "capgemini",
+    "hqCity": "Noida",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "HCLTech",
+    "careerUrl": "https://www.hcltech.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "hcltech",
+    "hqCity": "Hyderabad",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Persistent Systems",
+    "careerUrl": "https://www.persistent.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "persistent-systems",
+    "hqCity": "Mumbai",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Deloitte USI",
+    "careerUrl": "https://www2.deloitte.com/in/en.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "deloitte-usi",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "D. E. Shaw",
+    "careerUrl": "https://www.deshawindia.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "d-e-shaw",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Arcesium",
+    "careerUrl": "https://www.arcesium.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "arcesium",
+    "hqCity": "Noida",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Tower Research Capital",
+    "careerUrl": "https://www.tower-research.com/open-positions",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "towerresearchcapital",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "WorldQuant",
+    "careerUrl": "https://www.worldquant.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "worldquant",
+    "hqCity": "Mumbai",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "AlphaGrep",
+    "careerUrl": "https://alpha-grep.com/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "alphagrep",
+    "hqCity": "Noida",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Graviton Research Capital",
+    "careerUrl": "https://gravitonresearch.com/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "gravitonresearchcapital",
+    "hqCity": "Noida",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "QuadEye",
+    "careerUrl": "https://www.quadeye.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "quadeye",
+    "hqCity": "Gurgaon",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Databricks",
+    "careerUrl": "https://www.databricks.com/company/careers/university-recruiting",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "databricks",
+    "hqCity": "Noida",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Snowflake",
+    "careerUrl": "https://careers.snowflake.com/us/en/university",
+    "atsType": "ASHBY",
+    "atsIdentifier": "snowflake",
+    "hqCity": "Chennai",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "MongoDB",
+    "careerUrl": "https://www.mongodb.com/company/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "mongodb",
+    "hqCity": "New Delhi",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Confluent",
+    "careerUrl": "https://www.confluent.io/careers/",
+    "atsType": "ASHBY",
+    "atsIdentifier": "confluent",
+    "hqCity": "Gurgaon",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Couchbase",
+    "careerUrl": "https://www.couchbase.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "couchbase",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Yugabyte",
+    "careerUrl": "https://www.yugabyte.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "yugabyte",
+    "hqCity": "Noida",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Rubrik",
+    "careerUrl": "https://www.rubrik.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "rubrik",
+    "hqCity": "Noida",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Cohesity",
+    "careerUrl": "https://www.cohesity.com/company/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cohesity",
+    "hqCity": "Pune",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Commvault",
+    "careerUrl": "https://careers.commvault.com/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "commvault",
+    "hqCity": "Gurgaon",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Informatica",
+    "careerUrl": "https://www.informatica.com/about-us/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "informatica",
+    "hqCity": "Mumbai",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Palo Alto Networks",
+    "careerUrl": "https://jobs.paloaltonetworks.com/en/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "paloaltonetworks",
+    "hqCity": "Noida",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Akamai",
+    "careerUrl": "https://www.akamai.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "akamai",
+    "hqCity": "Hyderabad",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "AppDynamics",
+    "careerUrl": "https://www.appdynamics.com/company/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "appdynamics",
+    "hqCity": "New Delhi",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Sumo Logic",
+    "careerUrl": "https://www.sumologic.com/company/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "sumologic",
+    "hqCity": "Mumbai",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Datadog",
+    "careerUrl": "https://www.datadoghq.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "datadog",
+    "hqCity": "Chennai",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "UiPath",
+    "careerUrl": "https://www.uipath.com/company/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "uipath",
+    "hqCity": "Gurgaon",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Harness",
+    "careerUrl": "https://www.harness.io/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "harness",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "LambdaTest",
+    "careerUrl": "https://www.lambdatest.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "lambdatest",
+    "hqCity": "Noida",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Agoda",
+    "careerUrl": "https://careersatagoda.com/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "agoda",
+    "hqCity": "Gurgaon",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Stripe",
+    "careerUrl": "https://stripe.com/jobs",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "stripe",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Booking.com",
+    "careerUrl": "https://jobs.booking.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "booking-com",
+    "hqCity": "Mumbai",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Expedia Group",
+    "careerUrl": "https://lifeatexpediagroup.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "expedia-group",
+    "hqCity": "New Delhi",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "SABRE",
+    "careerUrl": "https://www.sabre.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sabre",
+    "hqCity": "Gurgaon",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Airbnb",
+    "careerUrl": "https://careers.airbnb.com/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "airbnb",
+    "hqCity": "Noida",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Acko",
+    "careerUrl": "https://www.acko.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "acko",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Angel One",
+    "careerUrl": "https://www.angelone.in/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "angelone",
+    "hqCity": "Noida",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Upstox",
+    "careerUrl": "https://upstox.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "upstox",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "CoinSwitch",
+    "careerUrl": "https://coinswitch.co/",
+    "atsType": "LEVER",
+    "atsIdentifier": "coinswitch",
+    "hqCity": "Pune",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Juspay",
+    "careerUrl": "https://juspay.in/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "juspay",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "PayU",
+    "careerUrl": "https://corporate.payu.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "payu",
+    "hqCity": "New Delhi",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Pine Labs",
+    "careerUrl": "https://www.pinelabs.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "pinelabs",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Cashfree Payments",
+    "careerUrl": "https://www.cashfree.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "cashfree",
+    "hqCity": "Noida",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "BharatPe",
+    "careerUrl": "https://bharatpe.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "bharatpe",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Yubi",
+    "careerUrl": "https://www.go-yubi.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "yubi",
+    "hqCity": "New Delhi",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Jupiter Money",
+    "careerUrl": "https://jupiter.money/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "jupiter-money",
+    "hqCity": "Hyderabad",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Fi Money (epiFi)",
+    "careerUrl": "https://fi.money/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "epifi",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "INDmoney",
+    "careerUrl": "https://www.indmoney.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "indmoney",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "MindTickle",
+    "careerUrl": "https://www.mindtickle.com/careers/",
+    "atsType": "LEVER",
+    "atsIdentifier": "mindtickle",
+    "hqCity": "Pune",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Icertis",
+    "careerUrl": "https://www.icertis.com/company/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "icertis",
+    "hqCity": "Pune",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Eightfold.ai",
+    "careerUrl": "https://eightfold.ai/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "eightfold-ai",
+    "hqCity": "Pune",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Leena AI",
+    "careerUrl": "https://leena.ai/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "leena-ai",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Yellow.ai",
+    "careerUrl": "https://yellow.ai/company/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "yellow-ai",
+    "hqCity": "Pune",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Wingify (VWO)",
+    "careerUrl": "https://wingify.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "wingify-vwo",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Rippling",
+    "careerUrl": "https://www.rippling.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "rippling",
+    "hqCity": "Bengaluru",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Airbase",
+    "careerUrl": "https://www.airbase.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "airbase",
+    "hqCity": "New Delhi",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Avalara",
+    "careerUrl": "https://www.avalara.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "avalara",
+    "hqCity": "Mumbai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Zeotap",
+    "careerUrl": "https://zeotap.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "zeotap",
+    "hqCity": "New Delhi",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "MoEngage",
+    "careerUrl": "https://www.moengage.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "moengage",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Netcore Cloud",
+    "careerUrl": "https://netcorecloud.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "netcore-cloud",
+    "hqCity": "Mumbai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Zepto",
+    "careerUrl": "https://www.zeptonow.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "zepto",
+    "hqCity": "Bengaluru",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "BigBasket",
+    "careerUrl": "https://www.bigbasket.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bigbasket",
+    "hqCity": "New Delhi",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Ajio",
+    "careerUrl": "https://www.ajio.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ajio",
+    "hqCity": "Bengaluru",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Blinkit",
+    "careerUrl": "https://blinkit.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "blinkit",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Reliance Retail",
+    "careerUrl": "https://relianceretail.com/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "reliance-retail",
+    "hqCity": "Hyderabad",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Licious",
+    "careerUrl": "https://www.licious.in/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "licious",
+    "hqCity": "Noida",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Urban Ladder",
+    "careerUrl": "https://www.urbanladder.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "urban-ladder",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "CommerceIQ",
+    "careerUrl": "https://commerceiq.ai/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "commerceiq",
+    "hqCity": "New Delhi",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Purplle",
+    "careerUrl": "https://purplle.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "purplle",
+    "hqCity": "Bengaluru",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Porter",
+    "careerUrl": "https://porter.in/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "porter",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "BlackBuck",
+    "careerUrl": "https://www.blackbuck.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "blackbuck",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Shiprocket",
+    "careerUrl": "https://www.shiprocket.in/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "shiprocket",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Ninjacart",
+    "careerUrl": "https://ninjacart.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ninjacart",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "DP World",
+    "careerUrl": "https://www.dpworld.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "dp-world",
+    "hqCity": "New Delhi",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "IndiaMART",
+    "careerUrl": "https://corporate.indiamart.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "indiamart",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Bizongo",
+    "careerUrl": "https://www.bizongo.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bizongo",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "OYO",
+    "careerUrl": "https://www.oyorooms.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "oyo",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "LogiNext",
+    "careerUrl": "https://loginextsolutions.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "loginext",
+    "hqCity": "Bengaluru",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Practo",
+    "careerUrl": "https://www.practo.com/company/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "practo",
+    "hqCity": "New Delhi",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Tata 1mg",
+    "careerUrl": "https://www.1mg.com/jobs",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "tata-1mg",
+    "hqCity": "Bengaluru",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "PharmEasy",
+    "careerUrl": "https://pharmeasy.in/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "pharmeasy",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "MediBuddy",
+    "careerUrl": "https://www.medibuddy.in/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "medibuddy",
+    "hqCity": "Noida",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "NoBroker",
+    "careerUrl": "https://www.nobroker.in/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "nobroker",
+    "hqCity": "Hyderabad",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "OLX India",
+    "careerUrl": "https://careers.olxgroup.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "olx-india",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "ShareChat",
+    "careerUrl": "https://sharechat.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sharechat",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Times Internet",
+    "careerUrl": "https://timesinternet.in/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "times-internet",
+    "hqCity": "Mumbai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Apna",
+    "careerUrl": "https://apna.co/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "apna",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Ixigo",
+    "careerUrl": "https://www.ixigo.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ixigo",
+    "hqCity": "Noida",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Nike",
+    "careerUrl": "https://jobs.nike.com/search-jobs/India/intern",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "nike",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Tesco Technology",
+    "careerUrl": "https://www.tesco-careers.com/technology",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "tesco-technology",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Airbus India",
+    "careerUrl": "https://www.airbus.com/en/careers/students-and-graduates",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "airbus-india",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "KLA Corporation",
+    "careerUrl": "https://www.kla.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "kla-corporation",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Gartner",
+    "careerUrl": "https://jobs.gartner.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "gartner",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Elevance Health (formerly Anthem)",
+    "careerUrl": "https://careers.elevancehealth.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "elevance-health-formerly-anthem",
+    "hqCity": "New Delhi",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "BNY Mellon",
+    "careerUrl": "https://www.bnymellon.com/us/en/careers/students.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bny-mellon",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Citi",
+    "careerUrl": "https://careers.citigroup.com/students-and-graduates/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "citi",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Electronic Arts (EA)",
+    "careerUrl": "https://www.ea.com/careers/students",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "electronic-arts-ea",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Reliance Jio (Jio Platforms)",
+    "careerUrl": "https://careers.jio.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "reliance-jio-jio-platforms",
+    "hqCity": "Noida",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "F5 Networks",
+    "careerUrl": "https://f5.wd5.myworkdayjobs.com/External",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "f5-networks",
+    "hqCity": "Hyderabad",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Siemens EDA",
+    "careerUrl": "https://www.sw.siemens.com/en-US/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "siemens-eda",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "MediaTek India",
+    "careerUrl": "https://www.mediatek.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "mediatek-india",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Renesas Electronics",
+    "careerUrl": "https://www.renesas.com/us/en/about/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "renesas-electronics",
+    "hqCity": "Gurgaon",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "STMicroelectronics",
+    "careerUrl": "https://www.st.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "stmicroelectronics",
+    "hqCity": "Chennai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "McKinsey & Company",
+    "careerUrl": "https://www.mckinsey.com/careers/students",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "mckinsey-company",
+    "hqCity": "Noida",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "BCG",
+    "careerUrl": "https://careers.bcg.com/students-and-graduates",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "bcg",
+    "hqCity": "Mumbai",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Bain & Company",
+    "careerUrl": "https://www.bain.com/careers/roles/ac/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bain-company",
+    "hqCity": "Hyderabad",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Publicis Sapient",
+    "careerUrl": "https://careers.publicissapient.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "publicis-sapient",
+    "hqCity": "Pune",
+    "sector": "MORE TECH"
+  },
+  {
+    "name": "Optiver",
+    "careerUrl": "https://optiver.com/working-at-optiver/career-opportunities/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "optiver",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Jane Street",
+    "careerUrl": "https://www.janestreet.com/join-jane-street/open-roles/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "jane-street",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Citadel",
+    "careerUrl": "https://www.citadel.com/careers/open-roles/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "citadel",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Citadel Securities",
+    "careerUrl": "https://www.citadelsecurities.com/careers/open-roles/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "citadel-securities",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Hudson River Trading (HRT)",
+    "careerUrl": "https://www.hudsonrivertrading.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "hudson-river-trading",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Jump Trading",
+    "careerUrl": "https://www.jumptrading.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "jump-trading",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Squarepoint Capital",
+    "careerUrl": "https://www.squarepoint-capital.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "squarepoint-capital",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Two Sigma",
+    "careerUrl": "https://www.twosigma.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "two-sigma",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Millennium Management",
+    "careerUrl": "https://www.mlp.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "millennium-management",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "IMC Trading",
+    "careerUrl": "https://www.imc.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "imc-trading",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "OpenAI",
+    "careerUrl": "https://openai.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "openai",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Anthropic",
+    "careerUrl": "https://www.anthropic.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "anthropic",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Figma",
+    "careerUrl": "https://www.figma.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "figma",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Canva",
+    "careerUrl": "https://www.canva.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "canva",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Vercel",
+    "careerUrl": "https://vercel.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "vercel",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Notion",
+    "careerUrl": "https://www.notion.so/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "notion",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Linear",
+    "careerUrl": "https://linear.app/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "linear",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Cursor",
+    "careerUrl": "https://www.cursor.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "cursor",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Replit",
+    "careerUrl": "https://replit.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "replit",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "GitHub",
+    "careerUrl": "https://github.com/about/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "github",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Reddit",
+    "careerUrl": "https://www.redditinc.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "reddit",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Discord",
+    "careerUrl": "https://discord.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "discord",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Pinterest",
+    "careerUrl": "https://www.pinterestcareers.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "pinterest",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Supabase",
+    "careerUrl": "https://supabase.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "supabase",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Sentry",
+    "careerUrl": "https://sentry.io/careers/",
+    "atsType": "ASHBY",
+    "atsIdentifier": "sentry",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Docker",
+    "careerUrl": "https://www.docker.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "docker",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Palantir Technologies",
+    "careerUrl": "https://www.palantir.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "palantir-technologies",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "HashiCorp",
+    "careerUrl": "https://www.hashicorp.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "hashicorp",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "CrowdStrike",
+    "careerUrl": "https://www.crowdstrike.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "crowdstrike",
+    "hqCity": "Pune",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Zscaler",
+    "careerUrl": "https://www.zscaler.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "zscaler",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Okta",
+    "careerUrl": "https://www.okta.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "okta",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Cloudflare",
+    "careerUrl": "https://www.cloudflare.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "cloudflare",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "GitLab",
+    "careerUrl": "https://about.gitlab.com/jobs/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "gitlab",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Lam Research",
+    "careerUrl": "https://www.lamresearch.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "lam-research",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Applied Materials",
+    "careerUrl": "https://www.appliedmaterials.com/us/en/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "applied-materials",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "NXP Semiconductors",
+    "careerUrl": "https://www.nxp.com/company/about-nxp/careers:CAREERS",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "nxp-semiconductors",
+    "hqCity": "Noida",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Infineon Technologies",
+    "careerUrl": "https://www.infineon.com/cms/en/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "infineon-technologies",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Microchip Technology",
+    "careerUrl": "https://careers.microchip.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "microchip-technology",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Ansys",
+    "careerUrl": "https://www.ansys.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ansys",
+    "hqCity": "Pune",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Tejas Networks",
+    "careerUrl": "https://www.tejasnetworks.com/careers.php",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "tejas-networks",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Fidelity Investments",
+    "careerUrl": "https://jobs.fidelity.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "fidelity-investments",
+    "hqCity": "Bengaluru",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Standard Chartered",
+    "careerUrl": "https://www.sc.com/en/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "standard-chartered",
+    "hqCity": "Chennai",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "HSBC Technology India",
+    "careerUrl": "https://www.hsbc.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "hsbc-technology-india",
+    "hqCity": "Pune",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Societe Generale",
+    "careerUrl": "https://careers.societegenerale.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "societe-generale",
+    "hqCity": "Bengaluru",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "NatWest Group",
+    "careerUrl": "https://jobs.natwestgroup.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "natwest-group",
+    "hqCity": "Gurgaon",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Macquarie Group",
+    "careerUrl": "https://www.macquarie.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "macquarie-group",
+    "hqCity": "Gurgaon",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Slice",
+    "careerUrl": "https://boards.greenhouse.io/slice",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "slice",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Ramp",
+    "careerUrl": "https://ramp.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "ramp",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Navi",
+    "careerUrl": "https://navi.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "navi",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "CoinDCX",
+    "careerUrl": "https://coindcx.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "coindcx",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Khatabook",
+    "careerUrl": "https://khatabook.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "khatabook",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Pocket FM",
+    "careerUrl": "https://pocketfm.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "pocketfm",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Ather Energy",
+    "careerUrl": "https://www.atherenergy.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ather-energy",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Clear (ClearTax)",
+    "careerUrl": "https://cleartax.in/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "clear",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Qube Research & Technologies (QRT)",
+    "careerUrl": "https://www.qube-rt.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "qrt",
+    "hqCity": "Mumbai",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "G-Research",
+    "careerUrl": "https://www.gresearch.com/vacancies/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "g-research",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Marshall Wace",
+    "careerUrl": "https://www.mwam.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "marshall-wace",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Point72",
+    "careerUrl": "https://point72.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "point72",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Bridgewater Associates",
+    "careerUrl": "https://www.bridgewater.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bridgewater",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "AQR Capital Management",
+    "careerUrl": "https://www.aqr.com/About-Us/Careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "aqr",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Balyasny Asset Management",
+    "careerUrl": "https://www.bamfunds.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bam",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Brevan Howard",
+    "careerUrl": "https://www.brevanhoward.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "brevan-howard",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Capula Investment Management",
+    "careerUrl": "https://www.capulaglobal.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "capula",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Da Vinci Derivatives",
+    "careerUrl": "https://davincitrading.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "da-vinci",
+    "hqCity": "Bengaluru",
+    "sector": "QUANT/TRADING"
+  },
+  {
+    "name": "Glean",
+    "careerUrl": "https://www.glean.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "gleanwork",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Scale AI",
+    "careerUrl": "https://scale.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "scaleai",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Perplexity AI",
+    "careerUrl": "https://www.perplexity.ai/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "perplexity",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Runway",
+    "careerUrl": "https://runwayml.com/careers/",
+    "atsType": "ASHBY",
+    "atsIdentifier": "runway",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "ElevenLabs",
+    "careerUrl": "https://elevenlabs.io/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "elevenlabs",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Harvey AI",
+    "careerUrl": "https://www.harvey.ai/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "harvey",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "LangChain",
+    "careerUrl": "https://www.langchain.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "langchain",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Mistral AI",
+    "careerUrl": "https://mistral.ai/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "mistral-ai",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Hugging Face",
+    "careerUrl": "https://huggingface.co/join-us",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "huggingface",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Cohere",
+    "careerUrl": "https://cohere.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cohere",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Together AI",
+    "careerUrl": "https://www.together.ai/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "together-ai",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Stability AI",
+    "careerUrl": "https://stability.ai/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "stability-ai",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Writer",
+    "careerUrl": "https://writer.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "writer",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Pika",
+    "careerUrl": "https://pika.art/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "pika",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Midjourney",
+    "careerUrl": "https://www.midjourney.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "midjourney",
+    "hqCity": "Bengaluru",
+    "sector": "BIG TECH"
+  },
+  {
+    "name": "Lattice Semiconductor",
+    "careerUrl": "https://www.latticesemi.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "lattice-semiconductor",
+    "hqCity": "Hyderabad",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Rambus",
+    "careerUrl": "https://www.rambus.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "rambus",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Cirrus Logic",
+    "careerUrl": "https://www.cirrus.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cirrus-logic",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Qorvo",
+    "careerUrl": "https://www.qorvo.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "qorvo",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Skyworks Solutions",
+    "careerUrl": "https://www.skyworksinc.com/Careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "skyworks-solutions",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Ambarella",
+    "careerUrl": "https://www.ambarella.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ambarella",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Wolfspeed",
+    "careerUrl": "https://www.wolfspeed.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "wolfspeed",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Keysight Technologies",
+    "careerUrl": "https://www.keysight.com/us/en/about/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "keysight-technologies",
+    "hqCity": "Gurgaon",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "National Instruments (NI)",
+    "careerUrl": "https://www.ni.com/en/about-ni/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "national-instruments",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Rohde & Schwarz",
+    "careerUrl": "https://www.rohde-schwarz.com/career",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "rohde-schwarz",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Allegro MicroSystems",
+    "careerUrl": "https://www.allegromicro.com/en/about-allegro/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "allegro-microsystems",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Ceva",
+    "careerUrl": "https://www.ceva-ip.com/about-ceva/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ceva",
+    "hqCity": "Bengaluru",
+    "sector": "SEMICONDUCTOR"
+  },
+  {
+    "name": "Cockroach Labs",
+    "careerUrl": "https://www.cockroachlabs.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "cockroachlabs",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Grafana Labs",
+    "careerUrl": "https://grafana.com/about/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "grafanalabs",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "PlanetScale",
+    "careerUrl": "https://planetscale.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "planetscale",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Webflow",
+    "careerUrl": "https://webflow.com/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "webflow",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "LaunchDarkly",
+    "careerUrl": "https://launchdarkly.com/careers/",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "launchdarkly",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "PostHog",
+    "careerUrl": "https://posthog.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "posthog",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Redis",
+    "careerUrl": "https://redis.io/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "redis",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Retool",
+    "careerUrl": "https://retool.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "retool",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Temporal",
+    "careerUrl": "https://temporal.io/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "temporal",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Astronomer",
+    "careerUrl": "https://www.astronomer.io/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "astronomer",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "ClickHouse",
+    "careerUrl": "https://clickhouse.com/company/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "clickhouse",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Sourcegraph",
+    "careerUrl": "https://sourcegraph.com/jobs",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sourcegraph",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Snyk",
+    "careerUrl": "https://snyk.io/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "snyk",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Miro",
+    "careerUrl": "https://miro.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "miro",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Zapier",
+    "careerUrl": "https://zapier.com/jobs",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "zapier",
+    "hqCity": "Bengaluru",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Qualys",
+    "careerUrl": "https://www.qualys.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "qualys",
+    "hqCity": "Pune",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "Veritas Technologies",
+    "careerUrl": "https://www.veritas.com/company/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "veritas-technologies",
+    "hqCity": "Pune",
+    "sector": "DATA/CLOUD"
+  },
+  {
+    "name": "OneCard (FPL Technologies)",
+    "careerUrl": "https://getonecard.app/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "onecard",
+    "hqCity": "Pune",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Uni Cards",
+    "careerUrl": "https://www.uni.cards/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "uni-cards",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Jar",
+    "careerUrl": "https://myjar.app/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "jar",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Park+",
+    "careerUrl": "https://parkplus.io/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "parkplus",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Spinny",
+    "careerUrl": "https://www.spinny.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "spinny",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Kuku FM",
+    "careerUrl": "https://kukufm.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "kukufm",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Classplus",
+    "careerUrl": "https://classplusapp.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "classplus",
+    "hqCity": "Noida",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "InCred Financial",
+    "careerUrl": "https://www.incred.com/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "incred-financial",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN FINTECH"
+  },
+  {
+    "name": "Mamaearth (Honasa Consumer)",
+    "careerUrl": "https://honasa.in/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "mamaearth",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Sugar Cosmetics",
+    "careerUrl": "https://in.sugarcosmetics.com/pages/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sugar-cosmetics",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "boAt (Imagine Marketing)",
+    "careerUrl": "https://www.boat-lifestyle.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "boat",
+    "hqCity": "Mumbai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Noise (Nexxbase)",
+    "careerUrl": "https://www.gonoise.com/pages/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "noise",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Country Delight",
+    "careerUrl": "https://countrydelight.in/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "country-delight",
+    "hqCity": "Gurgaon",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Wakefit",
+    "careerUrl": "https://www.wakefit.co/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "wakefit",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Ola Electric",
+    "careerUrl": "https://www.olaelectric.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ola-electric",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "BlueStone",
+    "careerUrl": "https://www.bluestone.com/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bluestone",
+    "hqCity": "Bengaluru",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "CaratLane",
+    "careerUrl": "https://www.caratlane.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "caratlane",
+    "hqCity": "Chennai",
+    "sector": "INDIAN ECOMM/CONSUMER"
+  },
+  {
+    "name": "Mercedes-Benz R&D India (MBRDI)",
+    "careerUrl": "https://www.mbrdi.co.in/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "mbrdi",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "BMW TechWorks India",
+    "careerUrl": "https://www.bmwgroup.jobs/in/en.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bmw-techworks",
+    "hqCity": "Pune",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Continental Automotive",
+    "careerUrl": "https://www.continental.com/en/career/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "continental-automotive",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "ZF Group India",
+    "careerUrl": "https://jobs.zf.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "zf-group",
+    "hqCity": "Hyderabad",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Boeing India",
+    "careerUrl": "https://jobs.boeing.com/india",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "boeing-india",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Collins Aerospace (RTX)",
+    "careerUrl": "https://careers.rtx.com/global/en/collins-aerospace",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "collins-aerospace",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Rolls-Royce India",
+    "careerUrl": "https://careers.rolls-royce.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "rolls-royce-india",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Schneider Electric",
+    "careerUrl": "https://www.se.com/in/en/about-us/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "schneider-electric",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "ABB India",
+    "careerUrl": "https://global.abb/group/en/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "abb-india",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Hitachi Energy",
+    "careerUrl": "https://www.hitachienergy.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "hitachi-energy",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Garmin India",
+    "careerUrl": "https://www.garmin.com/en-IN/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "garmin-india",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "Thomson Reuters",
+    "careerUrl": "https://www.thomsonreuters.com/en/careers.html",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "thomson-reuters",
+    "hqCity": "Bengaluru",
+    "sector": "MNC GCC"
+  },
+  {
+    "name": "S&P Global",
+    "careerUrl": "https://www.spglobal.com/en/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sp-global",
+    "hqCity": "Gurgaon",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Moody's Analytics",
+    "careerUrl": "https://careers.moodys.com/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "moodys-analytics",
+    "hqCity": "Gurgaon",
+    "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "Bloomberg",
+    "careerUrl": "https://www.bloomberg.com/careers/",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "bloomberg",
+    "hqCity": "Mumbai",
+    "sector": "FINANCE/BANKING"
+  }
+]

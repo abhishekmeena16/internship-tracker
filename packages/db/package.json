@@ -1,0 +1,19 @@
+{
+  "name": "@internship-tracker/db",
+  "version": "1.0.0",
+  "description": "Prisma database module for Internship Tracker",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "generate": "prisma generate",
+    "push": "prisma db push",
+    "migrate": "prisma migrate dev",
+    "seed": "node seed/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.10.2"
+  }
+}

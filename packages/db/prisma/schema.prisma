@@ -1,0 +1,150 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AtsType {
+  GREENHOUSE
+  LEVER
+  ASHBY
+  SMARTRECRUITERS
+  CUSTOM
+}
+
+enum RoleCategory {
+  SDE
+  DATA
+  AI_ML
+  OTHER
+}
+
+enum InternshipStatus {
+  OPEN
+  CLOSED
+}
+
+enum AlertChannel {
+  EMAIL
+  TELEGRAM
+}
+
+enum ScrapeStatus {
+  RUNNING
+  SUCCESS
+  FAILED
+}
+
+model Company {
+  id            Int         @id @default(autoincrement())
+  name          String
+  slug          String      @unique
+  careerUrl     String
+  atsType       AtsType
+  atsIdentifier String
+  logoUrl       String?
+  hqCity        String?
+  sector        String?
+  isActive      Boolean     @default(true)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  internships   Internship[]
+  scrapeRuns    ScrapeRun[]
+}
+
+model Internship {
+  id              Int               @id @default(autoincrement())
+  companyId       Int
+  company         Company           @relation(fields: [companyId], references: [id])
+  title           String
+  roleCategory    RoleCategory
+  locations       String[]
+  isRemote        Boolean           @default(false)
+  stipendMin      Int?
+  stipendMax      Int?
+  currency        String            @default("INR")
+  durationMonths  Int?
+  skills          String[]
+  eligibility     String?
+  deadline        DateTime?
+  postedAt        DateTime?
+  applyUrl        String
+  description     String            @db.Text
+  source          String
+  sourceJobId     String
+  status          InternshipStatus  @default(OPEN)
+  firstSeenAt     DateTime          @default(now())
+  lastSeenAt      DateTime          @default(now())
+  lastVerifiedAt  DateTime          @default(now())
+  dedupHash       String            @unique
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  bookmarks       Bookmark[]
+
+  @@index([companyId])
+  @@index([roleCategory])
+  @@index([status])
+  @@index([dedupHash])
+}
+
+model User {
+  id         Int        @id @default(autoincrement())
+  email      String     @unique
+  name       String?
+  password   String?
+  isVerified Boolean    @default(false)
+  role       String     @default("USER")
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @default(now()) @updatedAt
+  bookmarks  Bookmark[]
+  alerts     Alert[]
+}
+
+model OtpVerification {
+  id        Int      @id @default(autoincrement())
+  email     String
+  otp       String
+  expiresAt DateTime
+  verified  Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model Bookmark {
+  id           Int        @id @default(autoincrement())
+  userId       Int
+  user         User       @relation(fields: [userId], references: [id])
+  internshipId Int
+  internship   Internship @relation(fields: [internshipId], references: [id])
+  createdAt    DateTime   @default(now())
+
+  @@unique([userId, internshipId])
+}
+
+model Alert {
+  id           Int          @id @default(autoincrement())
+  userId       Int
+  user         User         @relation(fields: [userId], references: [id])
+  roleCategory RoleCategory?
+  locations    String[]
+  minStipend   Int?
+  channel      AlertChannel
+  isActive     Boolean      @default(true)
+  createdAt    DateTime     @default(now())
+}
+
+model ScrapeRun {
+  id           Int          @id @default(autoincrement())
+  companyId    Int
+  company      Company      @relation(fields: [companyId], references: [id])
+  source       String
+  startedAt    DateTime     @default(now())
+  finishedAt   DateTime?
+  status       ScrapeStatus @default(RUNNING)
+  itemsFound   Int          @default(0)
+  errorMessage String?      @db.Text
+}

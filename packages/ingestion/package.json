@@ -1,0 +1,16 @@
+{
+  "name": "@internship-tracker/ingestion",
+  "version": "1.0.0",
+  "description": "Data ingestion pipeline for Internship Tracker",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "ingest": "node scripts/sync-all-live.js",
+    "ingest:live": "node scripts/sync-all-live.js",
+    "ingest:company": "node jobs/ingestCompany.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
