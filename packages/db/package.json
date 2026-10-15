@@ -11,9 +11,7 @@
     "seed": "node seed/seed.js && node seed/populate-cse-internships.js && node seed/populate-more-cse-internships.js"
   },
   "dependencies": {
-    "@prisma/client": "^5.10.2"
-  },
-  "devDependencies": {
+    "@prisma/client": "^5.10.2",
     "prisma": "^5.10.2"
   }
 }

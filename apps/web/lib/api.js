@@ -14,10 +14,30 @@
  */
 
 const getApiUrl = () => {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL.replace(/\/+$/, '');
+  }
   if (typeof window !== 'undefined') {
     return window.location.origin;
   }
-  return process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:4000';
+  return process.env.INTERNAL_API_URL || 'http://127.0.0.1:4000';
+};
+
+const parseJsonResponse = async (res, defaultErrMsg = 'Request failed') => {
+  const text = await res.text();
+  let data = null;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    if (!res.ok) {
+      throw new Error(`Server returned status ${res.status}. If the backend is waking up from sleep, please try again in a few seconds.`);
+    }
+    throw new Error('Received non-JSON response from server');
+  }
+  if (!res.ok) {
+    throw new Error(data?.error || defaultErrMsg);
+  }
+  return data;
 };
 
 /**
@@ -133,11 +153,7 @@ export const registerUser = async (email, password, name = '') => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password, name })
   });
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data.error || 'Failed to register account');
-  }
-  return data;
+  return parseJsonResponse(res, 'Failed to register account');
 };
 
 /**
@@ -149,11 +165,7 @@ export const loginUser = async (email, password) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password })
   });
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data.error || 'Invalid email or password');
-  }
-  return data;
+  return parseJsonResponse(res, 'Invalid email or password');
 };
 
 /**
@@ -165,11 +177,7 @@ export const sendOtp = async (email, name = '') => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, name })
   });
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data.error || 'Failed to send verification code');
-  }
-  return data;
+  return parseJsonResponse(res, 'Failed to send verification code');
 };
 
 /**
@@ -181,11 +189,7 @@ export const verifyOtp = async (email, otp, name = '') => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, otp, name })
   });
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data.error || 'Invalid or expired verification code');
-  }
-  return data;
+  return parseJsonResponse(res, 'Invalid or expired verification code');
 };
 
 /**

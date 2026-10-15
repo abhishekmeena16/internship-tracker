@@ -1,8 +1,9 @@
-/** @type {import('next').NextConfig} */
+const apiUrl = (process.env.NEXT_PUBLIC_API_URL || process.env.INTERNAL_API_URL || 'http://127.0.0.1:4000').replace(/\/+$/, '');
+
 const nextConfig = {
   transpilePackages: ['@tanstack/react-query'],
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000',
+    NEXT_PUBLIC_API_URL: apiUrl,
   },
   images: {
     remotePatterns: [
@@ -13,7 +14,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://127.0.0.1:4000/api/:path*',
+        destination: `${apiUrl}/api/:path*`,
       },
     ];
   },
