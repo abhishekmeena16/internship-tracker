@@ -45,8 +45,8 @@ app.use('/api/bookmarks', bookmarksRoutes);
 app.use('/api/admin', adminRoutes);
 
 // Health checks
-app.get(['/health', '/api/health'], (req, res) => {
-  res.status(200).json({ status: 'ok', uptime: process.uptime() });
+app.get(['/', '/health', '/api/health'], (req, res) => {
+  res.status(200).json({ status: 'ok', service: 'internship-tracker-api', uptime: process.uptime() });
 });
 
 // Global error handler middleware
