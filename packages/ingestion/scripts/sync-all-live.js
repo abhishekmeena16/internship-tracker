@@ -16,8 +16,11 @@ import { verifyUrl } from '../lib/urlVerifier.js';
 
 const excludeWords = [
   'internal audit', 'international', 'internal controls', 'internal medicine',
-  'recruiter', 'recruiting', 'sourcer', 'talent acquisition specialist',
-  'talent acquisition sourcer', 'expatriate management'
+  'recruiter', 'recruiting', 'sourcer', 'talent acquisition', 'expatriate',
+  'human resources', 'hr intern', 'video editor', 'graphic design', 'content writer',
+  'creative & communications', 'people team', 'onboarding', 'industrial trainee',
+  'ca trainee', 'operations associate', 'technician apprentice', 'financial analyst',
+  'youtube & content', 'accounting', 'legal intern'
 ];
 
 const indiaKeywords = [
@@ -548,6 +551,22 @@ export async function syncAllLive() {
   });
 
   for (const job of existingOpen) {
+    const titleLower = job.title.toLowerCase();
+    const isNonTech = excludeWords.some(w => titleLower.includes(w));
+    const u = (job.applyUrl || '').toLowerCase();
+    const isGenericUrl = u.includes('/search') || u.includes('?q=') || u.includes('?keyword=') ||
+      u.endsWith('/careers') || u.endsWith('/careers/') || u.endsWith('/jobs') || u.endsWith('/jobs/') ||
+      u.endsWith('.com') || u.endsWith('.com/') || u.endsWith('.in') || u.endsWith('.in/');
+
+    if (isNonTech || isGenericUrl) {
+      console.log(`❌ Closing generic / non-tech role: [${job.title}] (${job.applyUrl})`);
+      await prisma.internship.update({
+        where: { id: job.id },
+        data: { status: 'CLOSED', lastVerifiedAt: new Date() }
+      });
+      continue;
+    }
+
     const stillActive = await verifyUrl(job.applyUrl, 10000);
     if (stillActive) {
       await prisma.internship.update({

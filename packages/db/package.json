@@ -8,7 +8,7 @@
     "generate": "prisma generate",
     "push": "prisma db push",
     "migrate": "prisma migrate dev",
-    "seed": "node seed/seed.js && node seed/populate-cse-internships.js && node seed/populate-more-cse-internships.js"
+    "seed": "node seed/seed.js"
   },
   "dependencies": {
     "@prisma/client": "^5.10.2",
