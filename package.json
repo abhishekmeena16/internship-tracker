@@ -2,6 +2,7 @@
   "name": "internship-tracker",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "A responsive website listing current internship openings at top 500 companies in India for CSE-related roles",
   "workspaces": [
     "apps/*",
