@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, Suspense } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { loginUser, registerUser, sendOtp, verifyOtp } from '../../lib/api';
@@ -19,8 +19,30 @@ function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectUrl = searchParams.get('redirect') || '/browse';
+  const applyUrl = searchParams.get('applyUrl');
+  const targetCompany = searchParams.get('company');
+  const targetTitle = searchParams.get('title');
 
-  const { login } = useAuth();
+  const { login, isAuthenticated } = useAuth();
+
+  const handlePostAuthRedirect = () => {
+    if (applyUrl && applyUrl !== 'undefined' && applyUrl.startsWith('http')) {
+      // Direct redirect to the company's application page!
+      window.location.href = applyUrl;
+      return;
+    }
+    router.push(redirectUrl);
+  };
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      if (applyUrl && applyUrl !== 'undefined' && applyUrl.startsWith('http')) {
+        window.location.href = applyUrl;
+      } else if (redirectUrl && redirectUrl !== '/login') {
+        router.push(redirectUrl);
+      }
+    }
+  }, [isAuthenticated, redirectUrl, applyUrl, router]);
 
   // Mode: 'login' | 'register' | 'otp'
   const [authMode, setAuthMode] = useState('login');
@@ -67,7 +89,7 @@ function LoginForm() {
     try {
       const data = await loginUser(email.trim(), password);
       login(data.token, data.user);
-      router.push(redirectUrl);
+      handlePostAuthRedirect();
     } catch (err) {
       setError(err.message || 'Invalid email or password');
     } finally {
@@ -102,10 +124,10 @@ function LoginForm() {
 
     try {
       await registerUser(email.trim(), password, name.trim());
-      // Seamlessly log in and redirect back to the internship!
+      // Seamlessly log in and redirect directly to company application!
       const loginData = await loginUser(email.trim(), password);
       login(loginData.token, loginData.user);
-      router.push(redirectUrl);
+      handlePostAuthRedirect();
     } catch (err) {
       setError(err.message || 'Failed to create account. Please try again.');
     } finally {
@@ -157,7 +179,7 @@ function LoginForm() {
     try {
       const data = await verifyOtp(email.trim(), otp.trim(), name.trim());
       login(data.token, data.user);
-      router.push(redirectUrl);
+      handlePostAuthRedirect();
     } catch (err) {
       setError(err.message || 'Invalid or expired verification code');
     } finally {
@@ -177,10 +199,12 @@ function LoginForm() {
             Internship Tracker
           </Link>
           <p className="text-blue-100 text-xs sm:text-sm mt-1">
-            {redirectUrl.includes('/internships/')
+            {targetCompany
+              ? `🔒 Sign in to apply directly at ${targetCompany}`
+              : redirectUrl.includes('/internships/')
               ? '🔒 Sign in to unlock application link & verified Job ID'
               : redirectUrl.includes('/browse')
-              ? '🔒 Sign in to unlock all 480+ internship openings'
+              ? '🔒 Sign in to unlock verified internship openings'
               : 'Secure JWT Authentication'}
           </p>
         </div>
@@ -224,6 +248,20 @@ function LoginForm() {
 
         {/* Form Container */}
         <div className="p-8">
+          {targetCompany && applyUrl && (
+            <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 text-amber-950 text-xs sm:text-sm flex items-start gap-3 shadow-sm">
+              <span className="text-xl flex-shrink-0">🚀</span>
+              <div>
+                <p className="font-bold text-amber-900 mb-0.5">
+                  Direct Application Link
+                </p>
+                <p className="text-amber-800 leading-snug">
+                  Signing in will <strong>instantly take you directly to {targetCompany}&apos;s official application page</strong>
+                  {targetTitle ? ` for "${targetTitle}"` : ''}.
+                </p>
+              </div>
+            </div>
+          )}
           {error && (
             <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm flex items-start gap-2">
               <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">

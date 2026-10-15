@@ -329,10 +329,10 @@ export default function InternshipDetailClient({ internship }) {
                   Sign in or create a free account to unlock the direct application link and apply directly at {companyName}.
                 </p>
                 <Link
-                  href={`/login?redirect=${encodeURIComponent(`/internships/${id}`)}`}
+                  href={`/login?applyUrl=${encodeURIComponent(applyUrl || '')}&company=${encodeURIComponent(companyName || '')}&title=${encodeURIComponent(title || '')}&redirect=${encodeURIComponent(`/internships/${id}`)}`}
                   className="inline-block px-8 py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm rounded-xl shadow-md transition-all hover:scale-105"
                 >
-                  Login / Register to Apply →
+                  Login / Register to Apply Directly at {companyName} →
                 </Link>
               </div>
             )}

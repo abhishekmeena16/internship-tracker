@@ -244,7 +244,7 @@ export default function InternshipCard({ internship }) {
             </a>
           ) : (
             <Link
-              href={`/login?redirect=${encodeURIComponent(`/internships/${id}`)}`}
+              href={`/login?applyUrl=${encodeURIComponent(internship.applyUrl || '')}&company=${encodeURIComponent(companyName)}&title=${encodeURIComponent(title)}&redirect=${encodeURIComponent(`/internships/${id}`)}`}
               className="text-xs px-3.5 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-md shadow-sm transition-all flex items-center gap-1.5 hover:shadow hover:scale-105 active:scale-95"
             >
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
