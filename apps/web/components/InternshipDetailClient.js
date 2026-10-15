@@ -291,37 +291,48 @@ export default function InternshipDetailClient({ internship }) {
               </button>
             </div>
 
-            <a
-              href={applyUrl || company?.careerUrl || '#'}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleCopyJobId}
-              className={`inline-block w-full md:w-auto px-10 py-4 text-xl font-extrabold rounded-lg shadow-md transition-all ${
-                isOpen
-                ? 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:-translate-y-1'
-                : 'bg-gray-200 text-gray-500 cursor-not-allowed pointer-events-none'
-              }`}
-            >
-              {isOpen ? `Apply Directly at ${companyName} →` : 'Application Closed'}
-            </a>
-            {isOpen && (
-              <div className="mt-3 text-xs text-gray-500 max-w-xl mx-auto space-y-1.5">
-                <p className="font-medium text-gray-700">
-                  ↗ Opens official application page: <a href={applyUrl || company?.careerUrl || '#'} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-mono break-all">{applyUrl || company?.careerUrl}</a>
+            {isAuthenticated ? (
+              <>
+                <a
+                  href={applyUrl || company?.careerUrl || '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleCopyJobId}
+                  className={`inline-block w-full md:w-auto px-10 py-4 text-xl font-extrabold rounded-lg shadow-md transition-all ${
+                    isOpen
+                    ? 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:-translate-y-1'
+                    : 'bg-gray-200 text-gray-500 cursor-not-allowed pointer-events-none'
+                  }`}
+                >
+                  {isOpen ? `Apply Directly at ${companyName} →` : 'Application Closed'}
+                </a>
+                {isOpen && (
+                  <div className="mt-3 text-xs text-gray-500 max-w-xl mx-auto space-y-1.5">
+                    <p className="font-medium text-gray-700">
+                      ↗ Opens official application page: <a href={applyUrl || company?.careerUrl || '#'} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-mono break-all">{applyUrl || company?.careerUrl}</a>
+                    </p>
+                    <p className="text-gray-500">
+                      Clicking will open the exact requisition page at {companyName}.
+                    </p>
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-6 sm:p-8 text-white text-center shadow-lg border border-blue-800 max-w-xl mx-auto">
+                <div className="w-12 h-12 bg-amber-500/20 text-amber-400 border border-amber-400/30 rounded-xl flex items-center justify-center mx-auto mb-3 text-xl">
+                  🔒
+                </div>
+                <h3 className="text-xl sm:text-2xl font-extrabold mb-2">
+                  Login to Apply Directly
+                </h3>
+                <p className="text-blue-100 text-xs sm:text-sm max-w-md mx-auto mb-5 leading-relaxed">
+                  Sign in or create a free account to unlock the direct application link and apply directly at {companyName}.
                 </p>
-                <p className="text-gray-500">
-                  Clicking will open the exact requisition page at {companyName}.
-                </p>
-              </div>
-            )}
-            {!isAuthenticated && (
-              <div className="mt-5 p-3.5 bg-blue-50/60 border border-blue-200 rounded-xl max-w-lg mx-auto text-xs text-blue-900 flex items-center justify-between gap-3">
-                <span>Want to track your applications and save roles for later?</span>
                 <Link
                   href={`/login?redirect=${encodeURIComponent(`/internships/${id}`)}`}
-                  className="font-bold underline text-blue-700 hover:text-blue-900 whitespace-nowrap"
+                  className="inline-block px-8 py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm rounded-xl shadow-md transition-all hover:scale-105"
                 >
-                  Sign in / Register
+                  Login / Register to Apply →
                 </Link>
               </div>
             )}

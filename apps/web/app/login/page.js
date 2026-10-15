@@ -101,13 +101,11 @@ function LoginForm() {
     setLoading(true);
 
     try {
-      const res = await registerUser(email.trim(), password, name.trim());
-      // Do NOT auto-login or redirect.
-      // Switch user to the Login screen with success feedback!
-      setAuthMode('login');
-      setPassword('');
-      setConfirmPassword('');
-      setSuccessMsg(res.message || 'Account created successfully! Please sign in with your email and password.');
+      await registerUser(email.trim(), password, name.trim());
+      // Seamlessly log in and redirect back to the internship!
+      const loginData = await loginUser(email.trim(), password);
+      login(loginData.token, loginData.user);
+      router.push(redirectUrl);
     } catch (err) {
       setError(err.message || 'Failed to create account. Please try again.');
     } finally {
