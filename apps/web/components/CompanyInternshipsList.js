@@ -77,16 +77,16 @@ export default function CompanyInternshipsList({ internships, company }) {
             🔔
           </div>
           <h3 className="text-xl sm:text-2xl font-extrabold mb-2">
-            Login to Apply at {company.name}
+            Get Instant Job Alerts & Save Bookmarks
           </h3>
           <p className="text-blue-100 text-sm max-w-lg mx-auto mb-5 leading-relaxed">
-            Sign in or create a free account with email OTP to unlock direct application portal links, quote official Job IDs, and receive instant alerts for new openings at {company.name}.
+            Create a free account with email OTP to track your application deadlines, save favorite roles, and receive alerts when {company.name} posts new internships.
           </p>
           <Link
             href={`/login?redirect=${encodeURIComponent(`/companies/${company.slug}`)}`}
             className="inline-block px-7 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm rounded-xl shadow-md transition-all hover:scale-105"
           >
-            Sign In / Register to Apply Directly →
+            Create Free Account / Sign In →
           </Link>
         </div>
       )}

@@ -3078,5 +3078,13 @@
     "atsIdentifier": "msd",
     "hqCity": "Hyderabad",
     "sector": "Healthcare Tech"
+  },
+  {
+    "name": "Project44",
+    "careerUrl": "https://www.project44.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "project44",
+    "hqCity": "Bengaluru",
+    "sector": "Supply Chain & Logistics Tech"
   }
 ]
