@@ -272,7 +272,7 @@ function HomeContent() {
               </div>
             ) : displayedOpenings.length > 0 ? (
               <>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch auto-rows-fr">
+                <div className="internship-grid">
                   {displayedOpenings.map(internship => (
                     <InternshipCard key={internship.id} internship={internship} />
                   ))}
