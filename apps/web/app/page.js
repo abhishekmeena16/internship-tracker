@@ -16,10 +16,10 @@ export default function HomePage() {
   const [heroSearch, setHeroSearch] = useState('');
   const [activeTab, setActiveTab] = useState('ALL');
 
-  // Fetch 6 verified internships for homepage showcase
+  // Fetch 6 verified internships for guests, or full page for authenticated users
   const { data: recentJobs, isLoading: jobsLoading } = useQuery({
-    queryKey: ['recent-internships'],
-    queryFn: () => fetchInternships({ limit: 6, sort: 'newest' }),
+    queryKey: ['recent-internships', isAuthenticated],
+    queryFn: () => fetchInternships({ limit: isAuthenticated ? 18 : 6, sort: 'newest' }),
   });
 
   // Fetch top hiring companies that actually have active openings
@@ -220,17 +220,40 @@ export default function HomePage() {
           <SkeletonList count={6} />
         ) : recentJobs?.data?.length > 0 ? (
           (() => {
-            const displayed = recentJobs.data.filter((job) => {
+            const filtered = recentJobs.data.filter((job) => {
               if (activeTab === 'ALL') return true;
               return job.roleCategory === activeTab;
-            }).slice(0, 6);
+            });
+            const displayed = isAuthenticated ? filtered : filtered.slice(0, 6);
 
             return displayed.length > 0 ? (
-              <div className="internship-grid">
-                {displayed.map((internship) => (
-                  <InternshipCard key={internship.id} internship={internship} />
-                ))}
-              </div>
+              <>
+                <div className="internship-grid">
+                  {displayed.map((internship) => (
+                    <InternshipCard key={internship.id} internship={internship} />
+                  ))}
+                </div>
+
+                {!isAuthenticated && (
+                  <div className="mt-8 bg-gradient-to-r from-blue-950 via-slate-900 to-indigo-950 rounded-2xl p-6 sm:p-8 text-white text-center shadow-lg border border-blue-800">
+                    <div className="inline-block px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold mb-2">
+                      🔒 Showing Preview of 6 Internships
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-black mb-2">
+                      Sign In to Unlock All Opportunities & Apply
+                    </h3>
+                    <p className="text-blue-100 text-xs sm:text-sm max-w-lg mx-auto mb-5 leading-relaxed">
+                      You are previewing 6 opportunities with login to apply restriction. Sign in with your email to unlock all verified CSE internships across India and get direct ATS application access.
+                    </p>
+                    <Link
+                      href="/login?redirect=/browse"
+                      className="inline-block px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-sm rounded-xl shadow-md transition-all hover:scale-105"
+                    >
+                      Sign In to Unlock All Internships & Apply →
+                    </Link>
+                  </div>
+                )}
+              </>
             ) : (
               <div className="bg-white p-12 text-center rounded-2xl border border-gray-200">
                 <p className="text-gray-500 font-medium">No roles currently in this specialization. Explore full directory for more.</p>
@@ -248,7 +271,7 @@ export default function HomePage() {
             href="/browse"
             className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-sm sm:text-base rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
           >
-            Explore All 150+ Verified Openings on Directory →
+            Explore All Verified Openings on Directory →
           </Link>
           {!isAuthenticated && (
             <Link

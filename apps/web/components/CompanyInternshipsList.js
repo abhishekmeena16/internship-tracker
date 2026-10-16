@@ -46,7 +46,7 @@ export default function CompanyInternshipsList({ internships, company }) {
     );
   }
 
-  const displayedList = (internships || []).slice(0, 6);
+  const displayedList = isAuthenticated ? (internships || []) : (internships || []).slice(0, 6);
 
   return (
     <div>
@@ -70,23 +70,27 @@ export default function CompanyInternshipsList({ internships, company }) {
         ))}
       </div>
 
-      {/* Alerts & Bookmarking call to action */}
+      {/* Guest Unlock Gate */}
       {!isAuthenticated && (
-        <div className="mt-8 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-6 sm:p-8 text-white text-center shadow-lg border border-blue-800">
+        <div className="mt-8 bg-gradient-to-r from-blue-950 via-slate-900 to-indigo-950 rounded-2xl p-6 sm:p-8 text-white text-center shadow-lg border border-blue-800">
           <div className="w-12 h-12 bg-blue-500/20 text-blue-300 border border-blue-400/30 rounded-xl flex items-center justify-center mx-auto mb-3 text-xl">
-            🔔
+            🔒
           </div>
-          <h3 className="text-xl sm:text-2xl font-extrabold mb-2">
-            Get Instant Job Alerts & Save Bookmarks
+          <h3 className="text-xl sm:text-2xl font-black mb-2">
+            {internships.length > 6 
+              ? `Previewing 6 of ${internships.length} Openings at ${company.name}`
+              : `Sign In to Apply to ${company.name}`}
           </h3>
           <p className="text-blue-100 text-sm max-w-lg mx-auto mb-5 leading-relaxed">
-            Create a free account with email OTP to track your application deadlines, save favorite roles, and receive alerts when {company.name} posts new internships.
+            {internships.length > 6
+              ? `Sign in or register for free to unlock all ${internships.length} open internships at ${company.name} and get direct ATS application links.`
+              : `Sign in or register for free to unlock direct ATS application links and track your applications.`}
           </p>
           <Link
             href={`/login?redirect=${encodeURIComponent(`/companies/${company.slug}`)}`}
-            className="inline-block px-7 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm rounded-xl shadow-md transition-all hover:scale-105"
+            className="inline-block px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-sm rounded-xl shadow-md transition-all hover:scale-105"
           >
-            Create Free Account / Sign In →
+            Sign In to Unlock All Roles & Apply →
           </Link>
         </div>
       )}

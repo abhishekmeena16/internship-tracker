@@ -56,8 +56,8 @@ function HomeContent() {
 
   const queryParams = {
     q: search || undefined,
-    page,
-    limit: 6,
+    page: isAuthenticated ? page : 1,
+    limit: isAuthenticated ? 18 : 6,
     location: filters.location || undefined,
     remote: filters.remoteOnly ? 'true' : undefined,
     minStipend: filters.minStipend || undefined,
@@ -69,7 +69,7 @@ function HomeContent() {
   };
 
   const { data, isLoading, isError, refetch } = useQuery({
-    queryKey: ['internships', queryParams],
+    queryKey: ['internships', queryParams, isAuthenticated],
     queryFn: () => fetchInternships(queryParams),
     placeholderData: (prev) => prev,
     staleTime: 30000,
@@ -114,9 +114,9 @@ function HomeContent() {
   };
 
   const totalResults = data?.pagination?.total || 0;
-  // Show all openings returned on current page
+  // Show 6 preview openings for guests, full page for authenticated users
   const allOpenings = data?.data || [];
-  const displayedOpenings = allOpenings;
+  const displayedOpenings = isAuthenticated ? allOpenings : allOpenings.slice(0, 6);
 
   // Check if any filters are active
   const hasActiveFilters = Boolean(
@@ -278,30 +278,30 @@ function HomeContent() {
                   ))}
                 </div>
 
-                {/* Pagination for all users */}
-                <Pagination 
-                  currentPage={page} 
-                  totalPages={data.pagination?.totalPages || 1} 
-                  onPageChange={setPage} 
-                />
-
-                {/* If guest, show persistent notification banner below pagination */}
-                {!isAuthenticated && (
-                  <div className="mt-10 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-6 sm:p-8 text-white text-center shadow-lg border border-blue-700/60 relative overflow-hidden">
-                    <div className="inline-block px-3.5 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold mb-3">
-                      🔒 Tip: 1-Click Apply & Job Bookmarking
+                {/* Pagination: only for authenticated users who have unlocked full access */}
+                {isAuthenticated ? (
+                  <Pagination 
+                    currentPage={page} 
+                    totalPages={data?.pagination?.totalPages || 1} 
+                    onPageChange={setPage} 
+                  />
+                ) : (
+                  /* Guest preview restriction gate */
+                  <div className="mt-10 bg-gradient-to-r from-blue-950 via-slate-900 to-indigo-950 rounded-2xl p-6 sm:p-8 text-white text-center shadow-xl border border-blue-800/80 relative overflow-hidden">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold mb-3">
+                      🔒 Preview Mode: 6 of {totalResults} Openings
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-extrabold mb-2">
-                      Sign In to Apply Directly with 1 Click
+                    <h3 className="text-xl sm:text-2xl font-black mb-2">
+                      Sign In to Unlock All {totalResults} Internships
                     </h3>
-                    <p className="text-blue-100 text-xs sm:text-sm max-w-xl mx-auto mb-5 leading-relaxed">
-                      Register with your college email and OTP to unlock instant 1-click application redirection, save jobs to bookmarks, and receive automated notifications for new openings.
+                    <p className="text-blue-100 text-xs sm:text-sm max-w-xl mx-auto mb-6 leading-relaxed">
+                      You are previewing 6 opportunities with login to apply restriction. Sign in or register for free with your email to unlock all {totalResults} verified CSE internships across India, browse full directory pages, and apply directly to employer ATS portals.
                     </p>
                     <Link
                       href={`/login?redirect=${encodeURIComponent('/browse')}`}
-                      className="inline-block px-7 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm rounded-xl shadow-md transition-all hover:scale-105"
+                      className="inline-block px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-sm rounded-xl shadow-lg transition-all hover:scale-105 active:scale-95"
                     >
-                      Sign In / Register with Email OTP →
+                      Sign In to Unlock All {totalResults} Internships & Apply →
                     </Link>
                   </div>
                 )}
