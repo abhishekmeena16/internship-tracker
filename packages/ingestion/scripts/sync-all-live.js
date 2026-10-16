@@ -20,7 +20,8 @@ const excludeWords = [
   'human resources', 'hr intern', 'video editor', 'graphic design', 'content writer',
   'creative & communications', 'people team', 'onboarding', 'industrial trainee',
   'ca trainee', 'operations associate', 'technician apprentice', 'financial analyst',
-  'youtube & content', 'accounting', 'legal intern'
+  'youtube & content', 'accounting', 'legal intern', 'recruitment', 'hr trainee',
+  'search infrastructure intern', 'program - intern', 'coordinator', 'operations'
 ];
 
 const indiaKeywords = [
@@ -556,7 +557,13 @@ export async function syncAllLive() {
     const u = (job.applyUrl || '').toLowerCase();
     const isGenericUrl = u.includes('/search') || u.includes('?q=') || u.includes('?keyword=') ||
       u.endsWith('/careers') || u.endsWith('/careers/') || u.endsWith('/jobs') || u.endsWith('/jobs/') ||
-      u.endsWith('.com') || u.endsWith('.com/') || u.endsWith('.in') || u.endsWith('.in/');
+      u.endsWith('.com') || u.endsWith('.com/') || u.endsWith('.in') || u.endsWith('.in/') ||
+      u.includes('/external_career_site') || u.includes('/students') || u.includes('open-positions') ||
+      u.includes('/early-careers') || u.includes('/corporatecareers') || u.includes('coinswitch.co') ||
+      u.includes('home.html') || u.includes('walmart-global-tech-india') || u.includes('lowes-india') ||
+      u.includes('careers.cred.club') || u.includes('department=university') || u.includes('/external_career') ||
+      u.includes('/external_careers') || u.includes('careers.html') || u.includes('summer-analyst-program') ||
+      u.includes('vacancy/1/adv');
 
     if (isNonTech || isGenericUrl) {
       console.log(`❌ Closing generic / non-tech role: [${job.title}] (${job.applyUrl})`);

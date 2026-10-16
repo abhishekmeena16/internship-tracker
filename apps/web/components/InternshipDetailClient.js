@@ -67,9 +67,13 @@ export default function InternshipDetailClient({ internship }) {
   const [copied, setCopied] = useState(false);
   const handleCopyJobId = () => {
     if (!formattedJobId) return;
-    navigator.clipboard.writeText(formattedJobId.replace(/^#/, ''));
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    try {
+      navigator.clipboard?.writeText(formattedJobId.replace(/^#/, ''));
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (e) {
+      // ignore clipboard error so navigation proceeds seamlessly
+    }
   };
 
   let rawDesc = description || 'No detailed description provided.';
