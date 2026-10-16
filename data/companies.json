@@ -891,7 +891,7 @@
     "name": "AlphaGrep",
     "careerUrl": "https://alpha-grep.com/",
     "atsType": "GREENHOUSE",
-    "atsIdentifier": "alphagrep",
+    "atsIdentifier": "alphagrepsecurities",
     "hqCity": "Noida",
     "sector": "QUANT/TRADING"
   },
@@ -3054,5 +3054,29 @@
     "atsIdentifier": "meraki-labs",
     "hqCity": "Bengaluru",
     "sector": "Artificial Intelligence"
+  },
+  {
+    "name": "BorgWarner",
+    "careerUrl": "https://borgwarner.wd5.myworkdayjobs.com/BorgWarner_Careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "borgwarner",
+    "hqCity": "Bengaluru",
+    "sector": "Automotive & Embedded Tech"
+  },
+  {
+    "name": "MRI Software",
+    "careerUrl": "https://mrisoftware.wd501.myworkdayjobs.com/External_CareerSite",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "mrisoftware",
+    "hqCity": "Bengaluru",
+    "sector": "Enterprise Software"
+  },
+  {
+    "name": "Merck & Co. (MSD India)",
+    "careerUrl": "https://msd.wd5.myworkdayjobs.com/SearchJobs",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "msd",
+    "hqCity": "Hyderabad",
+    "sector": "Healthcare Tech"
   }
 ]
