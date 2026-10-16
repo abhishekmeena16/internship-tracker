@@ -2865,9 +2865,9 @@
   },
   {
     "name": "Sprinto",
-    "careerUrl": "https://sprinto.com/careers",
-    "atsType": "CUSTOM",
-    "atsIdentifier": "sprinto",
+    "careerUrl": "https://jobs.lever.co/Sprinto",
+    "atsType": "LEVER",
+    "atsIdentifier": "Sprinto",
     "hqCity": "Bengaluru",
     "sector": "Cybersecurity & Compliance"
   },
@@ -3014,5 +3014,45 @@
     "atsIdentifier": "invideo",
     "hqCity": "Mumbai",
     "sector": "GenAI & Video Creation"
+  },
+  {
+    "name": "Scopely",
+    "careerUrl": "https://scopely.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "scopely",
+    "hqCity": "Bengaluru",
+    "sector": "Gaming & Interactive Entertainment"
+  },
+  {
+    "name": "Forma.ai",
+    "careerUrl": "https://forma.ai/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "formaaiinc3",
+    "hqCity": "Pune",
+    "sector": "Enterprise AI & Sales Tech"
+  },
+  {
+    "name": "Instawork",
+    "careerUrl": "https://www.instawork.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "instawork",
+    "hqCity": "Bengaluru",
+    "sector": "Workforce Tech & Robotics"
+  },
+  {
+    "name": "Interview Kickstart",
+    "careerUrl": "https://www.interviewkickstart.com/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "interview-kickstart",
+    "hqCity": "Bengaluru",
+    "sector": "EdTech & Engineering Prep"
+  },
+  {
+    "name": "Meraki-Labs",
+    "careerUrl": "https://www.merakilabs.co/careers",
+    "atsType": "ASHBY",
+    "atsIdentifier": "meraki-labs",
+    "hqCity": "Bengaluru",
+    "sector": "Artificial Intelligence"
   }
 ]

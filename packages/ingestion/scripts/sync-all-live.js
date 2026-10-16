@@ -22,7 +22,8 @@ const excludeWords = [
   'ca trainee', 'operations associate', 'technician apprentice', 'financial analyst',
   'youtube & content', 'accounting', 'legal intern', 'recruitment', 'hr trainee',
   'search infrastructure intern', 'coordinator', 'business development', 'data entry',
-  'founder’s office', "founder's office", 'operations intern'
+  'founder’s office', "founder's office", 'operations intern', 'finance intern',
+  'inventory management', 'operations management', 'trainer intern', 'customer operations'
 ];
 
 const indiaKeywords = [
@@ -304,7 +305,7 @@ export async function syncAllLive() {
                   sourceJobId: String(j.id),
                   title: j.title,
                   location: locName,
-                  applyUrl: j.jobUrl,
+                  applyUrl: j.jobUrl ? `${j.jobUrl.replace(/\/+$/, '')}/application` : j.jobUrl,
                   description: j.descriptionHtml || j.descriptionPlain || j.title,
                   postedAt: j.publishedAt ? new Date(j.publishedAt) : new Date(),
                   source: 'LIVE_ATS'
