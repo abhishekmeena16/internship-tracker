@@ -107,49 +107,18 @@ export default function InternshipCard({ internship }) {
 
   return (
     <div className="card flex flex-col h-full bg-white transition-all hover:-translate-y-1 hover:shadow-lg duration-300">
-      <div className="p-5 flex-grow">
-        <div className="flex justify-between items-start mb-3 gap-2">
-          <div className="flex-1">
-            <h3 className="text-lg font-bold text-gray-900 leading-tight mb-1">
-              <Link href={`/internships/${id}`} className="hover:text-blue-700 hover:underline">
+      <div className="p-5 flex flex-col flex-1">
+        {/* Header: Title + Role Badge + Bookmark */}
+        <div className="flex justify-between items-start gap-2 mb-2">
+          <div className="flex-1 min-w-0">
+            <h3
+              className="text-base font-bold text-gray-900 leading-snug line-clamp-2 h-11 hover:text-blue-700 transition-colors"
+              title={title}
+            >
+              <Link href={`/internships/${id}`} className="hover:underline">
                 {title}
               </Link>
             </h3>
-            <div className="flex items-center flex-wrap gap-2 mt-0.5">
-              {company?.slug ? (
-                <Link href={`/companies/${company.slug}`} className="text-sm font-semibold text-blue-700 hover:underline">
-                  {companyName}
-                </Link>
-              ) : (
-                <span className="text-sm font-semibold text-blue-700">{companyName}</span>
-              )}
-
-              {/* 1-Click Copy Job ID Button */}
-              <button
-                type="button"
-                onClick={handleCopyJobId}
-                title="Click to copy Job Requisition ID"
-                className={`inline-flex items-center gap-1 text-[11px] font-mono font-medium px-2 py-0.5 rounded border transition-all ${
-                  copied
-                    ? 'bg-emerald-50 text-emerald-700 border-emerald-300 font-bold'
-                    : 'text-gray-600 bg-gray-100 hover:bg-blue-50 hover:text-blue-700 border-gray-200 hover:border-blue-300'
-                }`}
-              >
-                <span>{copied ? '✓ ID Copied' : `Job ID: ${formattedId}`}</span>
-                {!copied && (
-                  <svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
-                )}
-              </button>
-
-              {internship.source === 'LIVE_ATS' && (
-                <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-full">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                  Live ATS
-                </span>
-              )}
-            </div>
           </div>
           <div className="flex items-center gap-1.5 flex-shrink-0">
             {roleCategory && (
@@ -174,60 +143,116 @@ export default function InternshipCard({ internship }) {
           </div>
         </div>
 
-        <div className="text-sm text-gray-600 mb-4 space-y-1">
-          <div className="flex items-center gap-2">
+        {/* Company Name & Metadata Row */}
+        <div className="mb-3">
+          <div className="truncate mb-1.5">
+            {company?.slug ? (
+              <Link href={`/companies/${company.slug}`} className="text-sm font-semibold text-blue-700 hover:underline">
+                {companyName}
+              </Link>
+            ) : (
+              <span className="text-sm font-semibold text-blue-700">{companyName}</span>
+            )}
+          </div>
+
+          <div className="flex items-center gap-1.5 h-6">
+            {formattedId && (
+              <button
+                type="button"
+                onClick={handleCopyJobId}
+                title="Click to copy Job Requisition ID"
+                className={`inline-flex items-center gap-1 text-[11px] font-mono font-medium px-2 py-0.5 rounded border transition-all truncate max-w-[145px] ${
+                  copied
+                    ? 'bg-emerald-50 text-emerald-700 border-emerald-300 font-bold'
+                    : 'text-gray-600 bg-gray-100 hover:bg-blue-50 hover:text-blue-700 border-gray-200 hover:border-blue-300'
+                }`}
+              >
+                <span className="truncate">{copied ? '✓ ID Copied' : `Job ID: ${formattedId}`}</span>
+                {!copied && (
+                  <svg className="w-3 h-3 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                )}
+              </button>
+            )}
+
+            {internship.source === 'LIVE_ATS' ? (
+              <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-full flex-shrink-0">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                Live ATS
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1 text-[10px] font-medium text-slate-600 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded-full flex-shrink-0">
+                Verified
+              </span>
+            )}
+          </div>
+        </div>
+
+        {/* Location & Compensation */}
+        <div className="text-xs sm:text-sm text-gray-600 mb-3 space-y-1.5">
+          <div className="flex items-center gap-2 h-5">
             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <span className="truncate">{locationStr}</span>
           </div>
-          {(stipendStr || durationMonths) && (
-            <div className="flex items-center gap-2">
-              <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>
-                {stipendStr || 'Stipend not specified'}
-                {durationMonths ? ` • ${durationMonths} months` : ''}
-              </span>
-            </div>
+
+          <div className="flex items-center gap-2 h-5">
+            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="truncate">
+              {stipendStr || 'Stipend undisclosed'}
+              {durationMonths ? ` • ${durationMonths} months` : ''}
+            </span>
+          </div>
+        </div>
+
+        {/* Eligible Degrees Badges */}
+        <div className="h-6 flex items-center gap-1 mb-2 overflow-hidden">
+          <span className="text-[11px] text-gray-400 font-medium flex-shrink-0 mr-0.5">Eligible:</span>
+          {internship.targetDegrees && internship.targetDegrees.length > 0 ? (
+            <>
+              {internship.targetDegrees.slice(0, 3).map(deg => (
+                <span
+                  key={deg}
+                  className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200 flex-shrink-0"
+                >
+                  {deg === 'BTECH' ? 'B.Tech / BE' : deg === 'MTECH' ? 'M.Tech / MS' : deg === 'BCA' ? 'BCA' : deg === 'MCA' ? 'MCA' : deg === 'BSC' ? 'B.Sc' : deg === 'MSC' ? 'M.Sc' : deg === 'PHD' ? 'PhD' : deg}
+                </span>
+              ))}
+              {internship.targetDegrees.length > 3 && (
+                <span className="text-[10px] text-gray-500 font-medium flex-shrink-0">+{internship.targetDegrees.length - 3}</span>
+              )}
+            </>
+          ) : (
+            <span className="text-[10px] text-gray-400 italic">Open to all college degrees</span>
           )}
         </div>
 
-        {/* Target Degrees Badges */}
-        {internship.targetDegrees && internship.targetDegrees.length > 0 && (
-          <div className="flex items-center flex-wrap gap-1 mb-2.5">
-            <span className="text-[11px] text-gray-400 font-medium mr-0.5">Eligible:</span>
-            {internship.targetDegrees.slice(0, 3).map(deg => (
-              <span
-                key={deg}
-                className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200"
-              >
-                {deg === 'BTECH' ? 'B.Tech / BE' : deg === 'MTECH' ? 'M.Tech / MS' : deg === 'BCA' ? 'BCA' : deg === 'MCA' ? 'MCA' : deg === 'BSC' ? 'B.Sc' : deg === 'MSC' ? 'M.Sc' : deg === 'PHD' ? 'PhD' : deg}
-              </span>
-            ))}
-            {internship.targetDegrees.length > 3 && (
-              <span className="text-[10px] text-gray-500 font-medium">+{internship.targetDegrees.length - 3}</span>
-            )}
-          </div>
-        )}
-
-        {skills && skills.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mb-2">
-            {skills.slice(0, 4).map(skill => (
-              <Badge key={skill} variant="outline">{skill}</Badge>
-            ))}
-            {skills.length > 4 && (
-              <Badge variant="outline">+{skills.length - 4}</Badge>
-            )}
-          </div>
-        )}
+        {/* Skills Badges */}
+        <div className="h-6 flex items-center gap-1.5 overflow-hidden">
+          {skills && skills.length > 0 ? (
+            <>
+              {skills.slice(0, 3).map(skill => (
+                <Badge key={skill} variant="outline" className="text-[10px] py-0.5 px-2 flex-shrink-0 truncate max-w-[110px]">{skill}</Badge>
+              ))}
+              {skills.length > 3 && (
+                <Badge variant="outline" className="text-[10px] py-0.5 px-1.5 flex-shrink-0">+{skills.length - 3}</Badge>
+              )}
+            </>
+          ) : (
+            <span className="text-[10px] text-gray-400 italic">Core skills in description</span>
+          )}
+        </div>
       </div>
 
-      <div className="border-t border-gray-100 bg-gray-50 px-4 py-3 flex items-center justify-between mt-auto gap-2">
+      {/* Card Footer (Always pinned to bottom) */}
+      <div className="border-t border-gray-100 bg-gray-50 px-4 py-3 flex items-center justify-between mt-auto gap-2 flex-shrink-0">
         <span className="text-xs text-gray-500 truncate">Posted {timeAgo(postedAt)}</span>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-shrink-0">
           <Link href={`/internships/${id}`} className="text-xs font-semibold text-gray-700 hover:text-blue-700 px-2.5 py-1.5 rounded hover:bg-gray-200 transition-colors">
             Details
           </Link>
