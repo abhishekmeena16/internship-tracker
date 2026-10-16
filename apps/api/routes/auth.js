@@ -176,12 +176,11 @@ router.post('/send-otp', authLimiter, async (req, res, next) => {
     });
 
     // Send the email
-    const emailResult = await sendOtpEmail(cleanEmail, otp);
+    await sendOtpEmail(cleanEmail, otp);
 
     res.json({
       success: true,
-      message: 'Verification code sent to your email',
-      previewOtp: emailResult.previewOtp || undefined
+      message: 'Verification code sent to your email'
     });
   } catch (error) {
     next(error);

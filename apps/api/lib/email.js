@@ -25,7 +25,7 @@ function getTransporter() {
  * Send an OTP verification email to the user
  * @param {string} email
  * @param {string} otp
- * @returns {Promise<{ sent: boolean, previewOtp?: string }>}
+ * @returns {Promise<{ sent: boolean }>}
  */
 export async function sendOtpEmail(email, otp) {
   const mailer = getTransporter();
@@ -73,5 +73,5 @@ export async function sendOtpEmail(email, otp) {
   console.log(`[AUTH OTP CODE] Verification Code: >>> ${otp} <<<`);
   console.log('========================================\n');
 
-  return { sent: true, previewOtp: otp };
+  return { sent: true };
 }

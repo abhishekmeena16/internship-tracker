@@ -57,7 +57,6 @@ function LoginForm() {
   // OTP specific states
   const [otp, setOtp] = useState('');
   const [otpStep, setOtpStep] = useState(1); // 1: Email, 2: Code
-  const [previewCode, setPreviewCode] = useState('');
 
   // Status states
   const [loading, setLoading] = useState(false);
@@ -92,21 +91,6 @@ function LoginForm() {
       handlePostAuthRedirect();
     } catch (err) {
       setError(err.message || 'Invalid email or password');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  // Quick Demo Login for instant testing and evaluation
-  const handleQuickDemoLogin = async () => {
-    resetMessages();
-    setLoading(true);
-    try {
-      const data = await loginUser('student@internshiptracker.in', 'demo123456');
-      login(data.token, data.user);
-      handlePostAuthRedirect();
-    } catch (err) {
-      setError(err.message || 'Demo login failed');
     } finally {
       setLoading(false);
     }
@@ -168,11 +152,8 @@ function LoginForm() {
     setLoading(true);
 
     try {
-      const data = await sendOtp(email.trim(), name.trim());
+      await sendOtp(email.trim(), name.trim());
       setSuccessMsg(`We've sent a 6-digit code to ${email.trim()}`);
-      if (data.previewOtp) {
-        setPreviewCode(data.previewOtp);
-      }
       setOtpStep(2);
     } catch (err) {
       setError(err.message || 'Failed to send verification code');
@@ -356,24 +337,6 @@ function LoginForm() {
                 </button>
               </div>
 
-              <div className="relative my-3">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-gray-200" />
-                </div>
-                <div className="relative flex justify-center text-xs uppercase">
-                  <span className="bg-white px-2 text-gray-400 font-medium">Or instant access</span>
-                </div>
-              </div>
-
-              <button
-                type="button"
-                onClick={handleQuickDemoLogin}
-                disabled={loading}
-                className="w-full py-2.5 px-4 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 font-bold rounded-xl shadow-2xs transition-all flex items-center justify-center gap-2 cursor-pointer text-xs"
-              >
-                <span>⚡ 1-Click Instant Demo Sign-In (student@internshiptracker.in)</span>
-              </button>
-
               <div className="text-center pt-2 space-y-2">
                 <p className="text-xs text-gray-600">
                   Don&apos;t have an account?{' '}
@@ -528,13 +491,6 @@ function LoginForm() {
                 </form>
               ) : (
                 <form onSubmit={handleVerifyOtp} className="space-y-6">
-                  {previewCode && (
-                    <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-900 text-xs text-center">
-                      <span>🔑 Demo Code: </span>
-                      <strong className="font-mono text-sm tracking-widest">{previewCode}</strong>
-                    </div>
-                  )}
-
                   <div>
                     <label className="block text-sm font-semibold text-gray-800 mb-2 text-center">
                       Enter 6-Digit Verification Code
