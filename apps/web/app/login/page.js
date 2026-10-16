@@ -97,6 +97,21 @@ function LoginForm() {
     }
   };
 
+  // Quick Demo Login for instant testing and evaluation
+  const handleQuickDemoLogin = async () => {
+    resetMessages();
+    setLoading(true);
+    try {
+      const data = await loginUser('student@internshiptracker.in', 'demo123456');
+      login(data.token, data.user);
+      handlePostAuthRedirect();
+    } catch (err) {
+      setError(err.message || 'Demo login failed');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // 2. User Registration (Does NOT auto-redirect; switches to login with confirmation)
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -340,6 +355,24 @@ function LoginForm() {
                   )}
                 </button>
               </div>
+
+              <div className="relative my-3">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-200" />
+                </div>
+                <div className="relative flex justify-center text-xs uppercase">
+                  <span className="bg-white px-2 text-gray-400 font-medium">Or instant access</span>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleQuickDemoLogin}
+                disabled={loading}
+                className="w-full py-2.5 px-4 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 font-bold rounded-xl shadow-2xs transition-all flex items-center justify-center gap-2 cursor-pointer text-xs"
+              >
+                <span>⚡ 1-Click Instant Demo Sign-In (student@internshiptracker.in)</span>
+              </button>
 
               <div className="text-center pt-2 space-y-2">
                 <p className="text-xs text-gray-600">

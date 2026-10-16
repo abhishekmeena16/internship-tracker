@@ -16,10 +16,10 @@ export default function HomePage() {
   const [heroSearch, setHeroSearch] = useState('');
   const [activeTab, setActiveTab] = useState('ALL');
 
-  // Fetch 24 verified internships for homepage showcase
+  // Fetch 6 verified internships for homepage showcase
   const { data: recentJobs, isLoading: jobsLoading } = useQuery({
     queryKey: ['recent-internships'],
-    queryFn: () => fetchInternships({ limit: 24, sort: 'newest' }),
+    queryFn: () => fetchInternships({ limit: 6, sort: 'newest' }),
   });
 
   // Fetch top hiring companies that actually have active openings
@@ -223,7 +223,7 @@ export default function HomePage() {
             const displayed = recentJobs.data.filter((job) => {
               if (activeTab === 'ALL') return true;
               return job.roleCategory === activeTab;
-            });
+            }).slice(0, 6);
 
             return displayed.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

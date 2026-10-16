@@ -57,7 +57,7 @@ function HomeContent() {
   const queryParams = {
     q: search || undefined,
     page,
-    limit: 18,
+    limit: 6,
     location: filters.location || undefined,
     remote: filters.remoteOnly ? 'true' : undefined,
     minStipend: filters.minStipend || undefined,

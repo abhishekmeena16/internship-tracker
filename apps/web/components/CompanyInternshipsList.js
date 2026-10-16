@@ -46,7 +46,7 @@ export default function CompanyInternshipsList({ internships, company }) {
     );
   }
 
-  const displayedList = internships;
+  const displayedList = (internships || []).slice(0, 6);
 
   return (
     <div>
