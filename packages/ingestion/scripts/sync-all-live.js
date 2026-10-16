@@ -21,7 +21,8 @@ const excludeWords = [
   'creative & communications', 'people team', 'onboarding', 'industrial trainee',
   'ca trainee', 'operations associate', 'technician apprentice', 'financial analyst',
   'youtube & content', 'accounting', 'legal intern', 'recruitment', 'hr trainee',
-  'search infrastructure intern', 'program - intern', 'coordinator', 'operations'
+  'search infrastructure intern', 'coordinator', 'business development', 'data entry',
+  'founder’s office', "founder's office", 'operations intern'
 ];
 
 const indiaKeywords = [
@@ -29,7 +30,7 @@ const indiaKeywords = [
   'gurgaon', 'gurugram', 'noida', 'chennai', 'delhi', 'new delhi',
   'delhi ncr', 'kolkata', 'ahmedabad', 'kochi', 'coimbatore', 'chandigarh',
   'indore', 'jaipur', 'karnataka', 'telangana', 'maharashtra', 'haryana',
-  'tamil nadu', 'uttar pradesh', 'sanand', 'gujarat'
+  'tamil nadu', 'uttar pradesh', 'sanand', 'gujarat', 'gift city', 'karnātaka'
 ];
 
 const foreignIndicators = [
@@ -128,6 +129,18 @@ const WORKDAY_COMPANIES = {
     instance: 'wd12',
     board: 'External_Career_Site',
     searchTerms: ['intern']
+  },
+  'Hewlett Packard Enterprise (HPE)': {
+    tenant: 'hpe',
+    instance: 'wd5',
+    board: 'Jobsathpe',
+    searchTerms: ['intern', 'college intern', 'external intern']
+  },
+  'Airbus India': {
+    tenant: 'ag',
+    instance: 'wd3',
+    board: 'Airbus',
+    searchTerms: ['Data Analyst Intern', 'Internship - Technical Data', 'Internship - Digital CoE for ERP India', 'intern']
   }
 };
 
@@ -209,13 +222,17 @@ export async function syncAllLive() {
             for (const j of data.jobs || []) {
               const locName = j.location?.name || '';
               if (isInternshipRole(j.title) && isIndiaLocation(locName, j.title)) {
-                let directApplyUrl = `https://boards.greenhouse.io/${id}/jobs/${j.id}`;
+                let directApplyUrl = `https://job-boards.greenhouse.io/${id}/jobs/${j.id}`;
                 if (id === 'groww') {
                   directApplyUrl = `https://job-boards.eu.greenhouse.io/groww/jobs/${j.id}`;
+                } else if (id === 'stripe') {
+                  directApplyUrl = `https://stripe.com/careers/listing/software-engineer-intern/${j.id}?gh_jid=${j.id}`;
                 } else if (id === 'inmobi') {
                   directApplyUrl = `https://job-boards.greenhouse.io/inmobi/jobs/${j.id}`;
                 } else if (id === 'glance') {
                   directApplyUrl = `https://job-boards.greenhouse.io/glance/jobs/${j.id}`;
+                } else if (id === 'towerresearchcapital') {
+                  directApplyUrl = `https://job-boards.greenhouse.io/towerresearchcapital/jobs/${j.id}`;
                 }
                 list.push({
                   companyId: dbComp.id,
@@ -440,21 +457,6 @@ export async function syncAllLive() {
     }
   }
 
-  // 6. Atlassian Official Active Requisition
-  const atlassianComp = companyMap.get('Atlassian');
-  if (atlassianComp) {
-    discoveredRawJobs.push({
-      companyId: atlassianComp.id,
-      companyName: atlassianComp.name,
-      sourceJobId: '26714',
-      title: 'Search Infrastructure Intern',
-      location: 'Bengaluru, Karnataka',
-      applyUrl: 'https://www.atlassian.com/company/careers/details/26714',
-      description: 'Join the Atlassian Search Platform team in Bengaluru. Build high-scale indexing, retrieval, and ranking microservices powering Jira, Confluence, and Trello across hundreds of millions of search requests.',
-      postedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
-      source: 'OFFICIAL_PORTAL'
-    });
-  }
 
   console.log(`\n📋 Total Raw Openings Discovered in this scan: ${discoveredRawJobs.length}`);
 
@@ -503,7 +505,7 @@ export async function syncAllLive() {
         stipendMin: stipend.min,
         stipendMax: stipend.max,
         currency: 'INR',
-        durationMonths: duration || 6,
+        durationMonths: duration ? Math.min(Math.max(duration, 2), 3) : 3,
         eligibility,
         targetDegrees,
         deadline,
@@ -526,7 +528,7 @@ export async function syncAllLive() {
         stipendMin: stipend.min,
         stipendMax: stipend.max,
         currency: 'INR',
-        durationMonths: duration || 6,
+        durationMonths: duration ? Math.min(Math.max(duration, 2), 3) : 3,
         eligibility,
         targetDegrees,
         deadline,
@@ -558,7 +560,7 @@ export async function syncAllLive() {
     const isGenericUrl = u.includes('/search') || u.includes('?q=') || u.includes('?keyword=') ||
       u.endsWith('/careers') || u.endsWith('/careers/') || u.endsWith('/jobs') || u.endsWith('/jobs/') ||
       u.endsWith('.com') || u.endsWith('.com/') || u.endsWith('.in') || u.endsWith('.in/') ||
-      u.includes('/external_career_site') || u.includes('/students') || u.includes('open-positions') ||
+      u.includes('/external_career_site') || u.includes('/students') || (u.includes('open-positions') && !u.includes('gh_jid')) ||
       u.includes('/early-careers') || u.includes('/corporatecareers') || u.includes('coinswitch.co') ||
       u.includes('home.html') || u.includes('walmart-global-tech-india') || u.includes('lowes-india') ||
       u.includes('careers.cred.club') || u.includes('department=university') || u.includes('/external_career') ||

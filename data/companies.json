@@ -2798,5 +2798,221 @@
     "atsIdentifier": "bloomberg",
     "hqCity": "Mumbai",
     "sector": "FINANCE/BANKING"
+  },
+  {
+    "name": "HackerRank",
+    "careerUrl": "https://www.hackerrank.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "hackerrank",
+    "hqCity": "Bengaluru",
+    "sector": "Developer Tools & SaaS"
+  },
+  {
+    "name": "Enterpret",
+    "careerUrl": "https://www.enterpret.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "enterpret",
+    "hqCity": "Bengaluru",
+    "sector": "Artificial Intelligence & SaaS"
+  },
+  {
+    "name": "CloudSEK",
+    "careerUrl": "https://cloudsek.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "cloudsek",
+    "hqCity": "Bengaluru",
+    "sector": "Cybersecurity"
+  },
+  {
+    "name": "Merkle Science",
+    "careerUrl": "https://www.merklescience.com/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "merklescience",
+    "hqCity": "Bengaluru",
+    "sector": "Blockchain & Cybersecurity"
+  },
+  {
+    "name": "Drivetrain",
+    "careerUrl": "https://www.drivetrain.ai/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "drivetrain",
+    "hqCity": "Bengaluru",
+    "sector": "Enterprise SaaS & FinTech"
+  },
+  {
+    "name": "Weekday",
+    "careerUrl": "https://www.weekday.works/careers",
+    "atsType": "LEVER",
+    "atsIdentifier": "weekdayworks",
+    "hqCity": "Bengaluru",
+    "sector": "HRTech & AI"
+  },
+  {
+    "name": "InMobi (Glance)",
+    "careerUrl": "https://glance.com/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "glance",
+    "hqCity": "Bengaluru",
+    "sector": "Consumer AI & AdTech"
+  },
+  {
+    "name": "Hewlett Packard Enterprise (HPE)",
+    "careerUrl": "https://careers.hpe.com",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "hpe",
+    "hqCity": "Bengaluru",
+    "sector": "Cloud & Enterprise Computing"
+  },
+  {
+    "name": "Sprinto",
+    "careerUrl": "https://sprinto.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "sprinto",
+    "hqCity": "Bengaluru",
+    "sector": "Cybersecurity & Compliance"
+  },
+  {
+    "name": "SigNoz",
+    "careerUrl": "https://signoz.io/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "signoz",
+    "hqCity": "Bengaluru",
+    "sector": "Observability & Open Source"
+  },
+  {
+    "name": "Appsmith",
+    "careerUrl": "https://www.appsmith.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "appsmith",
+    "hqCity": "Bengaluru",
+    "sector": "Developer Tools"
+  },
+  {
+    "name": "Devtron",
+    "careerUrl": "https://devtron.ai/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "devtron",
+    "hqCity": "Bengaluru",
+    "sector": "Kubernetes & DevOps"
+  },
+  {
+    "name": "Atlan",
+    "careerUrl": "https://atlan.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "atlan",
+    "hqCity": "New Delhi",
+    "sector": "Data Governance"
+  },
+  {
+    "name": "Keka",
+    "careerUrl": "https://www.keka.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "keka",
+    "hqCity": "Hyderabad",
+    "sector": "HRTech"
+  },
+  {
+    "name": "greytHR",
+    "careerUrl": "https://www.greythr.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "greythr",
+    "hqCity": "Bengaluru",
+    "sector": "HRTech"
+  },
+  {
+    "name": "Turtlemint",
+    "careerUrl": "https://www.turtlemint.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "turtlemint",
+    "hqCity": "Mumbai",
+    "sector": "InsurTech"
+  },
+  {
+    "name": "Fibe (EarlySalary)",
+    "careerUrl": "https://www.fibe.in/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "fibe",
+    "hqCity": "Pune",
+    "sector": "FinTech"
+  },
+  {
+    "name": "MoneyView",
+    "careerUrl": "https://moneyview.in/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "moneyview",
+    "hqCity": "Bengaluru",
+    "sector": "FinTech"
+  },
+  {
+    "name": "KreditBee",
+    "careerUrl": "https://www.kreditbee.in/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "kreditbee",
+    "hqCity": "Bengaluru",
+    "sector": "FinTech"
+  },
+  {
+    "name": "Dhan",
+    "careerUrl": "https://dhan.co/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "dhan",
+    "hqCity": "Mumbai",
+    "sector": "WealthTech"
+  },
+  {
+    "name": "HealthifyMe",
+    "careerUrl": "https://www.healthifyme.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "healthifyme",
+    "hqCity": "Bengaluru",
+    "sector": "HealthTech"
+  },
+  {
+    "name": "Ultrahuman",
+    "careerUrl": "https://www.ultrahuman.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "ultrahuman",
+    "hqCity": "Bengaluru",
+    "sector": "HealthTech"
+  },
+  {
+    "name": "Noise",
+    "careerUrl": "https://www.gonoise.com/pages/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "noise",
+    "hqCity": "Gurgaon",
+    "sector": "Consumer Electronics"
+  },
+  {
+    "name": "Unstop",
+    "careerUrl": "https://unstop.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "unstop",
+    "hqCity": "New Delhi",
+    "sector": "EdTech & Hiring"
+  },
+  {
+    "name": "Cuvette",
+    "careerUrl": "https://cuvette.tech/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "cuvette",
+    "hqCity": "Bengaluru",
+    "sector": "EdTech"
+  },
+  {
+    "name": "Gameskraft",
+    "careerUrl": "https://gameskraft.com/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "gameskraft",
+    "hqCity": "Bengaluru",
+    "sector": "Gaming"
+  },
+  {
+    "name": "InVideo",
+    "careerUrl": "https://invideo.io/careers",
+    "atsType": "CUSTOM",
+    "atsIdentifier": "invideo",
+    "hqCity": "Mumbai",
+    "sector": "GenAI & Video Creation"
   }
 ]
