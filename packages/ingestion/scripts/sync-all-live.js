@@ -625,7 +625,8 @@ export async function syncAllLive() {
       u.includes('/external_careers') || u.includes('careers.html') || u.includes('summer-analyst-program') ||
       u.includes('vacancy/1/adv');
 
-    if (job.source !== 'VERIFIED_PORTAL' && (isNonTech || isGenericUrl)) {
+    const hasDirectPattern = Boolean(u.match(/(\/job\/|\/jobs\/[0-9a-zA-Z_-]+|\/apply|requisition|posting|\/position\/|\/role\/|[0-9]{4,})/i));
+    if (isNonTech || isGenericUrl || !hasDirectPattern) {
       console.log(`❌ Closing generic / non-tech role: [${job.title}] (${job.applyUrl})`);
       await prisma.internship.update({
         where: { id: job.id },

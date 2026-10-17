@@ -53,13 +53,12 @@ async function main() {
   }
   console.log(`✅ Upserted ${companiesData.length} companies into database.`);
 
-  // 2. Populate verified CSE internships across 2, 3, and 6-month durations
-  console.log('🚀 Seeding verified CSE internships (2, 3, and 6 months)...');
-  execSync('node scripts/seed_cse_internships.js', { stdio: 'inherit', cwd: path.resolve(__dirname, '../../../') });
-  execSync('node scripts/generate_more_internships.js', { stdio: 'inherit', cwd: path.resolve(__dirname, '../../../') });
+  // 2. Populate 100% verified direct ATS internships across 2, 3, and 6-month durations (India only)
+  console.log('🚀 Seeding 100% direct verified India internships...');
+  execSync('node scripts/sync_direct_verified_internships.js', { stdio: 'inherit', cwd: path.resolve(__dirname, '../../../') });
   execSync('node scripts/populate-degrees.js', { stdio: 'inherit', cwd: path.resolve(__dirname, '../../../') });
 
-  console.log('✨ Database Seed Completed Successfully with 1000 Companies & Verified CSE Internships!');
+  console.log('✨ Database Seed Completed Successfully with 1000 Companies & 100% Direct Verified Internships!');
 }
 
 main()
