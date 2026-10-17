@@ -298,7 +298,7 @@ export default function InternshipDetailClient({ internship }) {
             {isAuthenticated ? (
               <>
                 <a
-                  href={applyUrl || company?.careerUrl || '#'}
+                  href={applyUrl || '#'}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={handleCopyJobId}
@@ -313,10 +313,10 @@ export default function InternshipDetailClient({ internship }) {
                 {isOpen && (
                   <div className="mt-3 text-xs text-gray-500 max-w-xl mx-auto space-y-1.5">
                     <p className="font-medium text-gray-700">
-                      ↗ Opens official application page: <a href={applyUrl || company?.careerUrl || '#'} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-mono break-all">{applyUrl || company?.careerUrl}</a>
+                      ↗ Opens official application page: <a href={applyUrl || '#'} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-mono break-all">{applyUrl}</a>
                     </p>
                     <p className="text-gray-500">
-                      Clicking will open the exact requisition page at {companyName}.
+                      Clicking will open the exact requisition application form at {companyName}.
                     </p>
                   </div>
                 )}

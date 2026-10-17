@@ -223,17 +223,9 @@ export async function syncAllLive() {
             for (const j of data.jobs || []) {
               const locName = j.location?.name || '';
               if (isInternshipRole(j.title) && isIndiaLocation(locName, j.title)) {
-                let directApplyUrl = `https://job-boards.greenhouse.io/${id}/jobs/${j.id}`;
+                let directApplyUrl = `https://job-boards.greenhouse.io/embed/job_app?for=${id}&token=${j.id}`;
                 if (id === 'groww') {
-                  directApplyUrl = `https://job-boards.eu.greenhouse.io/groww/jobs/${j.id}`;
-                } else if (id === 'stripe') {
-                  directApplyUrl = `https://stripe.com/careers/listing/software-engineer-intern/${j.id}?gh_jid=${j.id}`;
-                } else if (id === 'inmobi') {
-                  directApplyUrl = `https://job-boards.greenhouse.io/inmobi/jobs/${j.id}`;
-                } else if (id === 'glance') {
-                  directApplyUrl = `https://job-boards.greenhouse.io/glance/jobs/${j.id}`;
-                } else if (id === 'towerresearchcapital') {
-                  directApplyUrl = `https://job-boards.greenhouse.io/towerresearchcapital/jobs/${j.id}`;
+                  directApplyUrl = `https://job-boards.eu.greenhouse.io/embed/job_app?for=groww&token=${j.id}`;
                 }
                 list.push({
                   companyId: dbComp.id,
@@ -345,7 +337,7 @@ export async function syncAllLive() {
               sourceJobId: String(j.id),
               title: `${j.title} (Glance)`,
               location: locName,
-              applyUrl: `https://job-boards.greenhouse.io/glance/jobs/${j.id}`,
+              applyUrl: `https://job-boards.greenhouse.io/embed/job_app?for=glance&token=${j.id}`,
               description: j.content || j.title,
               postedAt: j.updated_at ? new Date(j.updated_at) : new Date(),
               source: 'LIVE_ATS'

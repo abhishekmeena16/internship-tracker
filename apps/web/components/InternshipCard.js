@@ -257,7 +257,7 @@ export default function InternshipCard({ internship }) {
           </Link>
           {isAuthenticated ? (
             <a
-              href={internship.applyUrl || internship.company?.careerUrl || '#'}
+              href={internship.applyUrl || '#'}
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleApplyClick}

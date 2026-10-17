@@ -47,7 +47,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Python', 'PyTorch', 'Machine Learning', 'Linear Algebra', 'Time Series', 'Deep Learning'],
     eligibility: 'Pre-final and final year B.Tech/Dual Degree students in CSE, Data Science, EE, or Mathematics graduating in 2026/2027.',
     targetDegrees: ['BTECH', 'MTECH'],
-    applyUrl: 'https://job-boards.greenhouse.io/towerresearchcapital/jobs/8143756',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=towerresearchcapital&token=8143756',
     sourceJobId: '8143756',
     description: 'Tower Research Capital is seeking talented AI/ML Interns in Gurgaon for an intensive 2-month summer program. Interns collaborate closely with quantitative researchers and engineers to research, develop, and benchmark deep learning models, natural language processing pipelines, and statistical predictive algorithms across terabytes of high-frequency financial market microstructure data.'
   },
@@ -64,7 +64,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['C++', 'Linux Systems', 'Low Latency', 'Computer Architecture', 'Algorithms', 'Networking'],
     eligibility: 'B.Tech/M.Tech candidates in Computer Science, Computer Engineering, or Electrical Engineering from tier-1 engineering institutions.',
     targetDegrees: ['BTECH', 'MTECH'],
-    applyUrl: 'https://job-boards.greenhouse.io/towerresearchcapital/jobs/8184771',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=towerresearchcapital&token=8184771',
     sourceJobId: '8184771',
     description: 'Engineering internship at Tower Research Capital GIFT City office. Work on modern high-throughput low-latency trading infrastructure, kernel tuning, network protocol acceleration, and distributed order processing engines.'
   },
@@ -83,7 +83,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['C++', 'Go', 'Distributed Systems', 'Data Structures & Algorithms', 'Linux', 'Cloud Storage'],
     eligibility: 'B.Tech / M.Tech in Computer Science or Information Technology graduating in 2026.',
     targetDegrees: ['BTECH', 'MTECH'],
-    applyUrl: 'https://job-boards.greenhouse.io/rubrik/jobs/8166537',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=rubrik&token=8166537',
     sourceJobId: '8166537',
     description: 'Rubrik is seeking a Software Engineer Intern for our Core Platform & Data (CPD) group in Bangalore for a 6-month winter/semester internship. You will design, build, and optimize enterprise-grade cyber resilience software, working on distributed metadata management, scalable replication protocols, and cloud backup systems in C++ and Go.'
   },
@@ -100,7 +100,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Software Engineering', 'Agile', 'Jira', 'Python', 'Release Engineering', 'Metrics & Analytics'],
     eligibility: 'B.Tech / B.E. in Computer Science, Software Engineering, or related fields graduating in 2026/2027.',
     targetDegrees: ['BTECH', 'MTECH', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/rubrik/jobs/8166514',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=rubrik&token=8166514',
     sourceJobId: '8166514',
     description: 'Work with Rubrik Engineering leadership in Bangalore to coordinate large-scale engineering initiatives, track infrastructure releases, analyze software quality telemetry, and streamline cross-functional software delivery pipelines.'
   },
@@ -119,7 +119,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Ruby', 'Java', 'Go', 'Distributed Systems', 'REST APIs', 'SQL', 'Fintech Architecture'],
     eligibility: 'Students pursuing a Bachelor’s or Master’s in Computer Science or related degree with graduation between late 2026 and mid 2027.',
     targetDegrees: ['BTECH', 'MTECH'],
-    applyUrl: 'https://job-boards.greenhouse.io/stripe/jobs/8031833',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=stripe&token=8031833',
     sourceJobId: '8031833',
     description: 'Join Stripe as a Software Engineer Intern in Bengaluru for our 3-month Summer Internship. As an intern on Stripe Engineering, you will build economic infrastructure for the internet, shipping mission-critical code to millions of global businesses, designing high-availability payment flows, and working across modern distributed cloud systems.'
   },
@@ -138,7 +138,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Python', 'Go', 'TypeScript', 'PostgreSQL', 'Redis', 'Kafka', 'LLM Architectures'],
     eligibility: 'Pre-final or final year B.Tech/Dual Degree students in Computer Science or Software Engineering. High PPO conversion opportunity.',
     targetDegrees: ['BTECH', 'MTECH', 'BCA', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/enterpret/jobs/7847134003',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=enterpret&token=7847134003',
     sourceJobId: '7847134003',
     description: 'Enterpret builds AI-powered customer feedback intelligence engines. As a Backend Engineering Intern in our Bengaluru office, you will engineer scalable microservices, manage large-scale asynchronous data pipelines processing millions of unstructured text records, and optimize latency for customer analytics dashboards.'
   },
@@ -157,7 +157,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Distributed Scraping', 'Cybersecurity'],
     eligibility: 'B.Tech / M.Tech / BCA / MCA in Computer Science, Information Security, or related technical disciplines graduating in 2026/2027.',
     targetDegrees: ['BTECH', 'MTECH', 'BCA', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/cloudsek/jobs/6222340004',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=cloudsek&token=6222340004',
     sourceJobId: '6222340004',
     description: 'CloudSEK is a leading contextual AI company focused on predictive cybersecurity. As an SDE Backend Intern in Bengaluru, you will build resilient web crawlers, design RESTful APIs for threat intelligence dashboards, and optimize relational and document data storage for automated threat detection.'
   },
@@ -174,7 +174,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Network Security', 'Vulnerability Assessment', 'Penetration Testing', 'Threat Modeling', 'Python', 'Linux'],
     eligibility: 'Students in Computer Science, Cyber Security, or Information Technology with active CTF participation or security certifications.',
     targetDegrees: ['BTECH', 'MTECH', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/cloudsek/jobs/6115382004',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=cloudsek&token=6115382004',
     sourceJobId: '6115382004',
     description: 'Work with CloudSEK threat intelligence and cybersecurity research teams to audit attack surfaces, perform brand risk simulations, analyze dark web leak telemetry, and draft automated vulnerability indicators.'
   },
@@ -193,7 +193,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Ruby on Rails', 'React.js', 'PostgreSQL', 'Docker', 'Algorithms', 'Developer Platforms'],
     eligibility: 'Pre-final or final year B.Tech / M.Tech students in Computer Science with strong competitive programming or open-source credentials.',
     targetDegrees: ['BTECH', 'MTECH'],
-    applyUrl: 'https://job-boards.greenhouse.io/hackerrank/jobs/8229735',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=hackerrank&token=8229735',
     sourceJobId: '8229735',
     description: 'HackerRank is the developer skills platform powering technical assessments globally. As an SDE Intern in Bangalore for a 6-month semester internship, you will architect, test, and ship code directly impacting millions of developers and enterprise interviewers worldwide.'
   },
@@ -212,7 +212,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['SQL', 'Python', 'Data Modeling', 'ETL Pipelines', 'dbt', 'Snowflake', 'Tableau'],
     eligibility: 'B.Tech / B.E. / MCA students in Computer Science, Information Technology, Data Science, or Mathematics graduating in 2026/2027.',
     targetDegrees: ['BTECH', 'MTECH', 'BCA', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/formaaiinc3/jobs/4235664005',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=formaaiinc3&token=4235664005',
     sourceJobId: '4235664005',
     description: 'Forma.ai is transforming sales compensation through AI automation. As an Analytics Engineer Intern in Pune, you will build transformed data schemas, optimize complex SQL analytics workflows on Snowflake, and create predictive data visualizations for enterprise enterprise clients.'
   },
@@ -231,7 +231,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Figma', 'Design Systems', 'User Research', 'Wireframing', 'Prototyping', 'Usability Testing'],
     eligibility: 'Undergraduate or Master’s students in Computer Science, HCI, Design, or engineering disciplines with a strong UX portfolio.',
     targetDegrees: ['BTECH', 'MTECH', 'BCA', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/project44/jobs/8101750',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=project44&token=8101750',
     sourceJobId: '8101750',
     description: 'project44 is the global supply chain visibility platform. In this 6-month internship in Bengaluru, you will work with product managers and engineers to research, wireframe, and prototype enterprise SaaS workflows, navigation architectures, and interactive data analytics dashboards.'
   },
@@ -250,7 +250,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Embedded C++', 'Python', 'IoT', 'Hardware Diagnostics', 'Sensors', 'Microcontrollers'],
     eligibility: 'B.Tech / B.E. students in Computer Science, Electronics & Communication, or Mechatronics graduating in 2026/2027.',
     targetDegrees: ['BTECH', 'MTECH'],
-    applyUrl: 'https://job-boards.greenhouse.io/instawork/jobs/4706444006',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4706444006',
     sourceJobId: '4706444006',
     description: 'Join Instawork’s technology hardware operations in Bengaluru. Work on IoT telemetry, diagnostic firmware, embedded microcontrollers, and hardware validation for automated warehouse operations.'
   },
@@ -267,7 +267,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Linux', 'Hardware Support', 'Networking', 'Device Management', 'Scripting', 'Troubleshooting'],
     eligibility: 'BCA / B.Sc / B.Tech students in IT, Computer Science, or Network Systems.',
     targetDegrees: ['BTECH', 'BCA', 'BSC', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/instawork/jobs/4646670006',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4646670006',
     sourceJobId: '4646670006',
     description: 'Support enterprise tech infrastructure, manage automated software provisioning, troubleshoot client hardware issues, and maintain corporate development workstations.'
   },
@@ -286,7 +286,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Python', 'Selenium', 'Appium', 'Game Testing', 'Test Automation', 'REST APIs'],
     eligibility: 'Students pursuing B.Tech / MCA in Computer Science or Software Engineering graduating in 2026.',
     targetDegrees: ['BTECH', 'MTECH', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/scopely/jobs/5448999008',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=scopely&token=5448999008',
     sourceJobId: '5448999008',
     description: 'Scopely is a premier global interactive entertainment and mobile gaming company. As a QA Automation Intern in Bangalore, you will build automated mobile test scripts, validate high-concurrency multiplayer game servers, and debug game client performance.'
   },
@@ -303,7 +303,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Unity', 'C#', 'Shader Programming', '3D Math', 'OpenGL', 'Game Optimization'],
     eligibility: 'Students in Computer Science, Game Engineering, or Digital Media with experience in Unity and 3D graphics rendering.',
     targetDegrees: ['BTECH', 'MTECH', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/scopely/jobs/5440761008',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=scopely&token=5440761008',
     sourceJobId: '5440761008',
     description: 'Bridge creative art and graphics software engineering at Scopely Bangalore. Optimize shader performance, automate visual asset pipelines in Unity, and maintain frame-rate stability across Android and iOS devices.'
   },
@@ -739,7 +739,7 @@ const DIRECT_INDIA_INTERNSHIPS = [
     skills: ['Figma', 'Mobile UX', 'Micro-interactions', 'Android Design', 'Prototyping'],
     eligibility: 'B.Tech / B.Des / MCA students with strong interest in mobile visual systems and interaction design.',
     targetDegrees: ['BTECH', 'MTECH', 'BCA', 'MCA'],
-    applyUrl: 'https://job-boards.greenhouse.io/glance/jobs/7916115',
+    applyUrl: 'https://job-boards.greenhouse.io/embed/job_app?for=glance&token=7916115',
     sourceJobId: '7916115',
     description: 'Design dynamic mobile lock-screen surface experiences for Glance (an InMobi Group Company) reaching 200M+ daily active smartphone users across India and Southeast Asia.'
   }
