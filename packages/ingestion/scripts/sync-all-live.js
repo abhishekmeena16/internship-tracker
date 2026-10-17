@@ -16,14 +16,7 @@ import { verifyUrl } from '../lib/urlVerifier.js';
 
 const excludeWords = [
   'internal audit', 'international', 'internal controls', 'internal medicine',
-  'recruiter', 'recruiting', 'sourcer', 'talent acquisition', 'expatriate',
-  'human resources', 'hr intern', 'video editor', 'graphic design', 'content writer',
-  'creative & communications', 'people team', 'onboarding', 'industrial trainee',
-  'ca trainee', 'operations associate', 'technician apprentice', 'financial analyst',
-  'youtube & content', 'accounting', 'legal intern', 'recruitment', 'hr trainee',
-  'search infrastructure intern', 'coordinator', 'business development', 'data entry',
-  'founder’s office', "founder's office", 'operations intern', 'finance intern',
-  'inventory management', 'operations management', 'trainer intern', 'customer operations'
+  'expatriate', 'physician', 'nurse', 'barista', 'driver'
 ];
 
 const indiaKeywords = [
