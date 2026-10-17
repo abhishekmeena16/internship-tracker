@@ -21,7 +21,7 @@ const degreeOptions = [
 export default function FilterPanel({ filters, onFilterChange }) {
   const { data: companiesData } = useQuery({
     queryKey: ['companies-filter'],
-    queryFn: () => fetchCompanies({ hiringOnly: 'true', limit: 200 }),
+    queryFn: () => fetchCompanies({ hiringOnly: 'true', limit: 1000 }),
   });
 
   return (

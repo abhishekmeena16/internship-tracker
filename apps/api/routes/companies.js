@@ -37,7 +37,7 @@ router.get('/', async (req, res, next) => {
       ];
     }
 
-    const takeLimit = limit ? Math.min(200, Math.max(1, parseInt(limit) || 50)) : undefined;
+    const takeLimit = limit ? Math.min(1000, Math.max(1, parseInt(limit) || 50)) : undefined;
 
     const companies = await prisma.company.findMany({
       where,

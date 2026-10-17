@@ -625,7 +625,7 @@ export async function syncAllLive() {
       u.includes('/external_careers') || u.includes('careers.html') || u.includes('summer-analyst-program') ||
       u.includes('vacancy/1/adv');
 
-    if (isNonTech || isGenericUrl) {
+    if (job.source !== 'VERIFIED_PORTAL' && (isNonTech || isGenericUrl)) {
       console.log(`❌ Closing generic / non-tech role: [${job.title}] (${job.applyUrl})`);
       await prisma.internship.update({
         where: { id: job.id },
