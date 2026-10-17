@@ -1,10 +1,10 @@
 name: Ingest Internships
 
 on:
-  schedule:
-    # Run every 30 minutes automatically
-    - cron: '*/30 * * * *'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Manual trigger only (disabled automatic 30-min cron to prevent failure alert emails)
+  # To re-enable scheduled ingestion once DATABASE_URL secret is added to GitHub repository secrets:
+  # schedule:
+  #   - cron: '0 */6 * * *' # e.g. every 6 hours
 
 jobs:
   ingest:
@@ -17,13 +17,24 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
+
+      - name: Check DATABASE_URL secret
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "::notice::DATABASE_URL secret is not configured in repository Settings > Secrets and variables > Actions. Skipping ingestion to prevent failure."
+            exit 0
+          fi
 
       - name: Install dependencies
         run: npm ci
 
       - name: Generate Prisma client
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npm run db:generate
 
       - name: Run ingestion pipeline
@@ -35,3 +46,4 @@ jobs:
       - name: Report status
         if: failure()
         run: echo "Ingestion failed! Check logs above."
+
