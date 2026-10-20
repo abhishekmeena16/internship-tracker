@@ -8030,5 +8030,13 @@
     "atsIdentifier": "span",
     "hqCity": "Bengaluru",
     "sector": "CleanTech & Smart Infrastructure"
+  },
+  {
+    "name": "Druva",
+    "careerUrl": "https://www.druva.com/about/careers",
+    "atsType": "GREENHOUSE",
+    "atsIdentifier": "druva",
+    "hqCity": "Pune",
+    "sector": "Cloud, DevOps & Data Platforms"
   }
 ]
