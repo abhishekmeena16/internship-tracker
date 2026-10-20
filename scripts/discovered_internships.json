@@ -1,0 +1,410 @@
+[
+  {
+    "ats": "GREENHOUSE",
+    "board": "stripe",
+    "id": "8031833",
+    "title": "Software Engineer, Intern",
+    "location": "Bengaluru",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=stripe&token=8031833"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "rubrik",
+    "id": "8166514",
+    "title": "ENG Project/ Program - Intern",
+    "location": "Bangalore",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=rubrik&token=8166514"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "rubrik",
+    "id": "8266405",
+    "title": "Industrial Trainee",
+    "location": "Bangalore",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=rubrik&token=8266405"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "towerresearchcapital",
+    "id": "8239067",
+    "title": "HR Intern",
+    "location": "Gurgaon",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=towerresearchcapital&token=8239067"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "towerresearchcapital",
+    "id": "8184771",
+    "title": "Intern",
+    "location": "Gift City",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=towerresearchcapital&token=8184771"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "towerresearchcapital",
+    "id": "8143756",
+    "title": "Intern - AI/ML",
+    "location": "Gurgaon",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=towerresearchcapital&token=8143756"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "cloudsek",
+    "id": "6115382004",
+    "title": "Security Consultant Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=cloudsek&token=6115382004"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "enterpret",
+    "id": "7847134003",
+    "title": "[Backend, Onsite] Software Engineering Intern",
+    "location": "Bengaluru, Onsite",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=enterpret&token=7847134003"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "project44",
+    "id": "8101750",
+    "title": "Product Design Intern",
+    "location": "Bengaluru, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=project44&token=8101750"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "scopely",
+    "id": "5448999008",
+    "title": "Intern - QA Engineer - Royal Lounge Casino",
+    "location": "IN - Bangalore, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=scopely&token=5448999008"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "scopely",
+    "id": "5440761008",
+    "title": "Intern-Technical Artist - Royal Lounge Casino",
+    "location": "IN - Bangalore, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=scopely&token=5440761008"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "inmobi",
+    "id": "8207429",
+    "title": "Intern - Creative & Communications, People Team ",
+    "location": "Bangalore",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=inmobi&token=8207429"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "glance",
+    "id": "7916115",
+    "title": "UX Design - Intern",
+    "location": "Bengaluru",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=glance&token=7916115"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "hackerrank",
+    "id": "8229735",
+    "title": "Software Development Engineer Intern",
+    "location": "Onsite in Bangalore",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=hackerrank&token=8229735"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "thoughtworks",
+    "id": "8236673",
+    "title": "Software Procurement Intern",
+    "location": "Gurgaon, India; Pune, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=thoughtworks&token=8236673"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "groww",
+    "id": "4956817101",
+    "title": "Video Editor Intern",
+    "location": "Bengaluru-VTP, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=groww&token=4956817101"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "instawork",
+    "id": "4706444006",
+    "title": "Hardware Intern — Robotics & AI",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4706444006"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "instawork",
+    "id": "4686783006",
+    "title": "HR Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4686783006"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "instawork",
+    "id": "4646658006",
+    "title": "Inventory Management Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4646658006"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "instawork",
+    "id": "4646670006",
+    "title": " IT Intern – Gadget & Tech Support Operations",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4646670006"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "instawork",
+    "id": "4618554006",
+    "title": "Operations Management Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4618554006"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "instawork",
+    "id": "4712960006",
+    "title": "Quality Check Intern - Hardware",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4712960006"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "instawork",
+    "id": "4651150006",
+    "title": "Trainer Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=instawork&token=4651150006"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "karya",
+    "id": "5215559008",
+    "title": "Data Curation Intern",
+    "location": "Bengaluru ",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=karya&token=5215559008"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "karya",
+    "id": "5416262008",
+    "title": "Research Intern - AI Evaluations",
+    "location": "Bengaluru",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=karya&token=5416262008"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "gravitonresearchcapital",
+    "id": "8768396002",
+    "title": "Quantitative Researcher (2027 Graduate)",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=gravitonresearchcapital&token=8768396002"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "gravitonresearchcapital",
+    "id": "8764240002",
+    "title": "Software Engineer (2027 Graduate)",
+    "location": "Gurugram, Haryana, India",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=gravitonresearchcapital&token=8764240002"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "formaaiinc3",
+    "id": "4235664005",
+    "title": "Analytics Engineer Intern",
+    "location": "Pune",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=formaaiinc3&token=4235664005"
+  },
+  {
+    "ats": "GREENHOUSE",
+    "board": "formaaiinc3",
+    "id": "4090129005",
+    "title": "Customer Operations Analyst Intern",
+    "location": "Pune",
+    "url": "https://job-boards.greenhouse.io/embed/job_app?for=formaaiinc3&token=4090129005"
+  },
+  {
+    "ats": "LEVER",
+    "board": "merklescience",
+    "id": "20675d00-156c-4f3f-a9bf-4cacee176bc2",
+    "title": "Software Engineer - Intern (Frontend)",
+    "location": "Bangalore Bangalore",
+    "url": "https://jobs.lever.co/merklescience/20675d00-156c-4f3f-a9bf-4cacee176bc2/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "merklescience",
+    "id": "e663b69b-264a-4bd7-b04d-fb3c0a824a28",
+    "title": "Software Engineer(Intern)- Backend",
+    "location": "Bangalore Bangalore",
+    "url": "https://jobs.lever.co/merklescience/e663b69b-264a-4bd7-b04d-fb3c0a824a28/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "drivetrain",
+    "id": "bc1c17bc-86ac-4f00-a1e3-0eb85aae4fdc",
+    "title": "Engineering Intern – Gen AI for FP&A Platform",
+    "location": "India India",
+    "url": "https://jobs.lever.co/drivetrain/bc1c17bc-86ac-4f00-a1e3-0eb85aae4fdc/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "drivetrain",
+    "id": "edb8a8f7-16ac-4177-bf2e-99c36ab47d5f",
+    "title": "Quality Assurance Engineering (QAE) - Intern",
+    "location": "India India",
+    "url": "https://jobs.lever.co/drivetrain/edb8a8f7-16ac-4177-bf2e-99c36ab47d5f/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "fampay",
+    "id": "23dd18f9-a331-4115-98e9-e98c404c47c6",
+    "title": "Copy Intern",
+    "location": "Bengaluru Bengaluru",
+    "url": "https://jobs.lever.co/fampay/23dd18f9-a331-4115-98e9-e98c404c47c6/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "fampay",
+    "id": "bbbbbfd2-1855-4991-82d5-84ef57607c24",
+    "title": "Security Engineer Intern",
+    "location": "Bengaluru Bengaluru",
+    "url": "https://jobs.lever.co/fampay/bbbbbfd2-1855-4991-82d5-84ef57607c24/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "ion",
+    "id": "6f66cbb4-c882-4234-b84e-68baea56e1ea",
+    "title": "Software Developer, 2027 Leadership Development Program, ION Group, India",
+    "location": "Noida Noida Mumbai Pune",
+    "url": "https://jobs.lever.co/ion/6f66cbb4-c882-4234-b84e-68baea56e1ea/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "ion",
+    "id": "83539ab9-431f-43e3-9179-f891eeb16db9",
+    "title": "Technical Product Analyst, 2027 Leadership Development Program, ION Group, India",
+    "location": "Noida Noida Mumbai Pune",
+    "url": "https://jobs.lever.co/ion/83539ab9-431f-43e3-9179-f891eeb16db9/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "paytm",
+    "id": "0ecd9d93-e4f3-4dd0-a22e-852fec9b6e02",
+    "title": "Intern- HR Onboarding",
+    "location": "Noida, Uttar Pradesh Noida, Uttar Pradesh",
+    "url": "https://jobs.lever.co/paytm/0ecd9d93-e4f3-4dd0-a22e-852fec9b6e02/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "paytm",
+    "id": "a2f53649-1fe8-4a0d-97ee-24dab719a9e8",
+    "title": "Internship - Talent Acquisition",
+    "location": "Noida, Uttar Pradesh Noida, Uttar Pradesh",
+    "url": "https://jobs.lever.co/paytm/a2f53649-1fe8-4a0d-97ee-24dab719a9e8/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "paytm",
+    "id": "6d7551f7-34c3-46a2-a4e4-18b29f15338c",
+    "title": "Talent Acquisition Intern",
+    "location": "Noida, Uttar Pradesh Noida, Uttar Pradesh",
+    "url": "https://jobs.lever.co/paytm/6d7551f7-34c3-46a2-a4e4-18b29f15338c/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "paytm",
+    "id": "88e8b698-8f03-4e09-9581-168f831fb3af",
+    "title": "Talent Acquisition Intern - Bangalore",
+    "location": "Bangalore, Karnataka Bangalore, Karnataka",
+    "url": "https://jobs.lever.co/paytm/88e8b698-8f03-4e09-9581-168f831fb3af/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "paytm",
+    "id": "95eadc2b-27bf-40fe-b6e6-93aaeadd08f7",
+    "title": "Talent Acquisition Intern - IT Recruitment",
+    "location": "Noida, Uttar Pradesh Noida, Uttar Pradesh",
+    "url": "https://jobs.lever.co/paytm/95eadc2b-27bf-40fe-b6e6-93aaeadd08f7/apply"
+  },
+  {
+    "ats": "LEVER",
+    "board": "paytm",
+    "id": "648841ab-2778-4759-a4c9-eabae97ec65d",
+    "title": "Talent Acquisition- Intern || Noida ||",
+    "location": "Noida, Uttar Pradesh Noida, Uttar Pradesh",
+    "url": "https://jobs.lever.co/paytm/648841ab-2778-4759-a4c9-eabae97ec65d/apply"
+  },
+  {
+    "ats": "ASHBY",
+    "board": "sarvam",
+    "id": "ef7f079b-6a1f-4b27-9cfb-a5f68fe825c7",
+    "title": "Marketing Intern",
+    "location": "Bengaluru",
+    "url": "https://jobs.ashbyhq.com/sarvam/ef7f079b-6a1f-4b27-9cfb-a5f68fe825c7/application"
+  },
+  {
+    "ats": "ASHBY",
+    "board": "sarvam",
+    "id": "1eb3008a-2014-4a6c-8a35-cfa7caf8a60f",
+    "title": "Growth Marketing Intern",
+    "location": "Bengaluru",
+    "url": "https://jobs.ashbyhq.com/sarvam/1eb3008a-2014-4a6c-8a35-cfa7caf8a60f/application"
+  },
+  {
+    "ats": "ASHBY",
+    "board": "cynlr",
+    "id": "e49ddbc5-4de3-4d97-94ac-7b37201229d3",
+    "title": "Fresher or Internship Roles",
+    "location": "Bengaluru",
+    "url": "https://jobs.ashbyhq.com/cynlr/e49ddbc5-4de3-4d97-94ac-7b37201229d3/application"
+  },
+  {
+    "ats": "ASHBY",
+    "board": "meraki-labs",
+    "id": "93ff65d2-f0cd-4fd1-b76f-b2e350f2d6c8",
+    "title": "AI Engineer Intern",
+    "location": "Bangalore, India",
+    "url": "https://jobs.ashbyhq.com/meraki-labs/93ff65d2-f0cd-4fd1-b76f-b2e350f2d6c8/application"
+  },
+  {
+    "ats": "ASHBY",
+    "board": "interview-kickstart",
+    "id": "7653eff0-a253-4165-b4a4-17c2cd0cbfa2",
+    "title": "Intern, Talent Acquisition",
+    "location": "India",
+    "url": "https://jobs.ashbyhq.com/interview-kickstart/7653eff0-a253-4165-b4a4-17c2cd0cbfa2/application"
+  },
+  {
+    "ats": "ASHBY",
+    "board": "interview-kickstart",
+    "id": "bf2a4802-4180-440b-b5bf-5f8058e69846",
+    "title": "Intern - Software Development Engineer ( Backend )",
+    "location": "Remote - India",
+    "url": "https://jobs.ashbyhq.com/interview-kickstart/bf2a4802-4180-440b-b5bf-5f8058e69846/application"
+  },
+  {
+    "ats": "ASHBY",
+    "board": "bureau",
+    "id": "3e012479-5e01-44a1-a4ab-5558127f7964",
+    "title": "Product Analyst Intern",
+    "location": "Bangalore",
+    "url": "https://jobs.ashbyhq.com/bureau/3e012479-5e01-44a1-a4ab-5558127f7964/application"
+  },
+  {
+    "ats": "AMAZON",
+    "board": "amazon",
+    "id": "10498382",
+    "title": "Financial Analyst Intern",
+    "location": "Bengaluru, India",
+    "url": "https://www.amazon.jobs/en/jobs/10498382/financial-analyst-intern"
+  }
+]

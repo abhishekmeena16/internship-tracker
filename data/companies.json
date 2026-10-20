@@ -7998,5 +7998,37 @@
     "atsIdentifier": "western-digital-india",
     "hqCity": "Bengaluru",
     "sector": "Semiconductor & Embedded"
+  },
+  {
+    "name": "Human Archive",
+    "careerUrl": "https://jobs.ashbyhq.com/humanarchive",
+    "atsType": "ASHBY",
+    "atsIdentifier": "humanarchive",
+    "hqCity": "Bengaluru",
+    "sector": "AI Research & Digital Identity"
+  },
+  {
+    "name": "Libra AI",
+    "careerUrl": "https://jobs.ashbyhq.com/libra",
+    "atsType": "ASHBY",
+    "atsIdentifier": "libra",
+    "hqCity": "Bengaluru",
+    "sector": "Artificial Intelligence & Workflow Automation"
+  },
+  {
+    "name": "Airbound",
+    "careerUrl": "https://jobs.ashbyhq.com/airbound",
+    "atsType": "ASHBY",
+    "atsIdentifier": "airbound",
+    "hqCity": "Bengaluru",
+    "sector": "Autonomous Robotics & Aerospace"
+  },
+  {
+    "name": "SPAN",
+    "careerUrl": "https://jobs.ashbyhq.com/span",
+    "atsType": "ASHBY",
+    "atsIdentifier": "span",
+    "hqCity": "Bengaluru",
+    "sector": "CleanTech & Smart Infrastructure"
   }
 ]
