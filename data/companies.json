@@ -2840,14 +2840,6 @@
     "sector": "Enterprise SaaS & DevTools"
   },
   {
-    "name": "Weekday",
-    "careerUrl": "https://www.weekday.works/careers",
-    "atsType": "LEVER",
-    "atsIdentifier": "weekdayworks",
-    "hqCity": "Bengaluru",
-    "sector": "EdTech & HRTech"
-  },
-  {
     "name": "InMobi (Glance)",
     "careerUrl": "https://glance.com/careers",
     "atsType": "GREENHOUSE",
@@ -2862,14 +2854,6 @@
     "atsIdentifier": "hpe",
     "hqCity": "Bengaluru",
     "sector": "Cloud, DevOps & Data Platforms"
-  },
-  {
-    "name": "Sprinto",
-    "careerUrl": "https://jobs.lever.co/Sprinto",
-    "atsType": "LEVER",
-    "atsIdentifier": "Sprinto",
-    "hqCity": "Bengaluru",
-    "sector": "Cybersecurity & Cloud"
   },
   {
     "name": "SigNoz",
@@ -3022,30 +3006,6 @@
     "atsIdentifier": "scopely",
     "hqCity": "Bengaluru",
     "sector": "Gaming & Media Tech"
-  },
-  {
-    "name": "Forma.ai",
-    "careerUrl": "https://forma.ai/careers",
-    "atsType": "GREENHOUSE",
-    "atsIdentifier": "formaaiinc3",
-    "hqCity": "Pune",
-    "sector": "AI & Machine Learning"
-  },
-  {
-    "name": "Instawork",
-    "careerUrl": "https://www.instawork.com/careers",
-    "atsType": "GREENHOUSE",
-    "atsIdentifier": "instawork",
-    "hqCity": "Bengaluru",
-    "sector": "AI & Machine Learning"
-  },
-  {
-    "name": "Interview Kickstart",
-    "careerUrl": "https://www.interviewkickstart.com/careers",
-    "atsType": "ASHBY",
-    "atsIdentifier": "interview-kickstart",
-    "hqCity": "Bengaluru",
-    "sector": "EdTech & HRTech"
   },
   {
     "name": "Meraki-Labs",
@@ -3852,14 +3812,6 @@
     "careerUrl": "https://signzy.com/careers/",
     "atsType": "CUSTOM",
     "atsIdentifier": "signzy",
-    "hqCity": "Bengaluru",
-    "sector": "FinTech & Banking"
-  },
-  {
-    "name": "Bureau.id",
-    "careerUrl": "https://www.bureau.id/careers",
-    "atsType": "ASHBY",
-    "atsIdentifier": "bureau",
     "hqCity": "Bengaluru",
     "sector": "FinTech & Banking"
   },
@@ -7998,38 +7950,6 @@
     "atsIdentifier": "western-digital-india",
     "hqCity": "Bengaluru",
     "sector": "Semiconductor & Embedded"
-  },
-  {
-    "name": "Human Archive",
-    "careerUrl": "https://jobs.ashbyhq.com/humanarchive",
-    "atsType": "ASHBY",
-    "atsIdentifier": "humanarchive",
-    "hqCity": "Bengaluru",
-    "sector": "AI Research & Digital Identity"
-  },
-  {
-    "name": "Libra AI",
-    "careerUrl": "https://jobs.ashbyhq.com/libra",
-    "atsType": "ASHBY",
-    "atsIdentifier": "libra",
-    "hqCity": "Bengaluru",
-    "sector": "Artificial Intelligence & Workflow Automation"
-  },
-  {
-    "name": "Airbound",
-    "careerUrl": "https://jobs.ashbyhq.com/airbound",
-    "atsType": "ASHBY",
-    "atsIdentifier": "airbound",
-    "hqCity": "Bengaluru",
-    "sector": "Autonomous Robotics & Aerospace"
-  },
-  {
-    "name": "SPAN",
-    "careerUrl": "https://jobs.ashbyhq.com/span",
-    "atsType": "ASHBY",
-    "atsIdentifier": "span",
-    "hqCity": "Bengaluru",
-    "sector": "CleanTech & Smart Infrastructure"
   },
   {
     "name": "Druva",

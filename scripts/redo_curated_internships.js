@@ -1117,14 +1117,27 @@ async function main() {
                     item.roleCategory === 'SDE' ? ['BTECH', 'MTECH', 'BCA', 'MCA'] :
                     ['BTECH', 'MTECH', 'BCA', 'MCA', 'BSC', 'MSC', 'BBA', 'MBA'];
 
-    let record = await prisma.internship.findFirst({
-      where: {
-        OR: [
-          { sourceJobId: item.sourceJobId },
-          { applyUrl: item.applyUrl }
-        ]
+    // Clean up any collision on dedupHash
+    let record = await prisma.internship.findUnique({ where: { dedupHash } });
+    if (!record) {
+      record = await prisma.internship.findFirst({
+        where: {
+          OR: [
+            { sourceJobId: item.sourceJobId },
+            { applyUrl: item.applyUrl }
+          ]
+        }
+      });
+      if (record) {
+        // Remove any other conflicting row that might hold this dedupHash
+        await prisma.internship.deleteMany({
+          where: {
+            dedupHash,
+            id: { not: record.id }
+          }
+        });
       }
-    });
+    }
 
     if (record) {
       record = await prisma.internship.update({
