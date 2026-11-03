@@ -1,0 +1,668 @@
+{
+  "timestamp": "2026-11-03T21:51:28.603Z",
+  "durationSec": 105.2,
+  "summary": {
+    "openInternships": 45,
+    "closedInternships": 2094,
+    "uniqueCompanies": 24,
+    "newUpserted": 10,
+    "deadLinksClosed": 10,
+    "rulesRejected": 20,
+    "duplicatesRemoved": 6
+  },
+  "openPositions": [
+    {
+      "company": "Tower Research Capital",
+      "title": "Intern (Quantitative / Tech)",
+      "stipendMin": 180000,
+      "stipendMax": 250000,
+      "durationMonths": 3,
+      "locations": [
+        "Gurugram",
+        "Gift City",
+        "India"
+      ],
+      "applyUrl": "https://www.tower-research.com/open-positions/?gh_jid=8184771",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Tower Research Capital",
+      "title": "HR Intern",
+      "stipendMin": 180000,
+      "stipendMax": 250000,
+      "durationMonths": 3,
+      "locations": [
+        "Gurugram",
+        "India"
+      ],
+      "applyUrl": "https://www.tower-research.com/open-positions/?gh_jid=8239067",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Tower Research Capital",
+      "title": "Intern - AI/ML",
+      "stipendMin": 180000,
+      "stipendMax": 250000,
+      "durationMonths": 3,
+      "locations": [
+        "Gurugram",
+        "India"
+      ],
+      "applyUrl": "https://www.tower-research.com/open-positions/?gh_jid=8143756",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Google",
+      "title": "Silicon Engineering Intern, PhD, Summer 2027",
+      "stipendMin": 150000,
+      "stipendMax": 180000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/109375266236572358",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Google",
+      "title": "Software Engineering PhD Intern, Summer 2027",
+      "stipendMin": 150000,
+      "stipendMax": 180000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://www.google.com/about/careers/applications/jobs/results/109976286780105414",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Nvidia",
+      "title": "PhD Intern, AI ML in Wireless L1/L2 - Fall 2026",
+      "stipendMin": 120000,
+      "stipendMax": 150000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Bengaluru/PhD-Intern--AI-ML-in-Wireless-L1-L2---Fall-2026_JR2024423",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Adobe",
+      "title": "2027 Intern - Research PhD Intern (Bangalore)",
+      "stipendMin": 120000,
+      "stipendMax": 150000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/Bangalore/XMLNAME-2027-Intern---Research-PhD-Intern_R173016",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Amazon",
+      "title": "Financial Analyst Intern",
+      "stipendMin": 110000,
+      "stipendMax": 130000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://www.amazon.jobs/en/jobs/10498382/financial-analyst-intern",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Amazon",
+      "title": "Software Development Engineer (SDE I) Intern – 2027",
+      "stipendMin": 110000,
+      "stipendMax": 130000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://www.amazon.jobs/en/jobs/10541345/sde-i-intern-amazon-university-talent-acquisition",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Amazon",
+      "title": "Systems Development Engineer Intern – 2027",
+      "stipendMin": 100000,
+      "stipendMax": 120000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://www.amazon.jobs/en/jobs/10498161",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Amazon",
+      "title": "Support Engineer Intern – 2027",
+      "stipendMin": 90000,
+      "stipendMax": 110000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://www.amazon.jobs/en/jobs/10498163",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Amazon",
+      "title": "Programmer Analyst Intern – 2027",
+      "stipendMin": 90000,
+      "stipendMax": 110000,
+      "durationMonths": 3,
+      "locations": [
+        "Chennai",
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://www.amazon.jobs/en/jobs/10506542",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Marvell",
+      "title": "Research Intern (PhD), Autonomous Infrastructure and Telemetry",
+      "stipendMin": 85000,
+      "stipendMax": 110000,
+      "durationMonths": 3,
+      "locations": [
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hyderabad/Research-Intern--PhD---Autonomous-Infrastructure-and-Telemetry_2604257",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Marvell",
+      "title": "Research Intern (PhD), FPGA & Silicon Prototyping",
+      "stipendMin": 85000,
+      "stipendMax": 110000,
+      "durationMonths": 3,
+      "locations": [
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hyderabad/Research-Intern--PhD----FPGA---Silicon-Prototyping_2604254",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Marvell",
+      "title": "Research Intern, Physical AI and GPU (PhD)",
+      "stipendMin": 85000,
+      "stipendMax": 110000,
+      "durationMonths": 3,
+      "locations": [
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hyderabad/Research-Intern--Physical-AI-and-GPU--PhD-_2604253",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Marvell",
+      "title": "Research Intern (PhD), AI-Scale Protocols & Simulation",
+      "stipendMin": 85000,
+      "stipendMax": 110000,
+      "durationMonths": 3,
+      "locations": [
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hyderabad/Research-Intern--PhD---AI-Scale-Protocols---Simulation_2604255",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Marvell",
+      "title": "Research Intern (PhD), Storage Systems for AI",
+      "stipendMin": 85000,
+      "stipendMax": 110000,
+      "durationMonths": 3,
+      "locations": [
+        "Hyderabad",
+        "India"
+      ],
+      "applyUrl": "https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/Hyderabad/Research-Intern--PhD---Storage-Systems-for-AI_2604256",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Intern",
+      "stipendMin": 85000,
+      "stipendMax": 120000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://stripe.com/jobs/search?gh_jid=8031833",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Autodesk",
+      "title": "Apprentice, Talent Acquisition & People Experience",
+      "stipendMin": 60000,
+      "stipendMax": 75000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/Bengaluru-IND/Apprentice--Talent-Acquisition---People-Experience_23WD73769-1",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Hewlett Packard Enterprise (HPE)",
+      "title": "College Intern",
+      "stipendMin": 55000,
+      "stipendMax": 75000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://hpe.wd5.myworkdayjobs.com/en-US/Jobsathpe/job/Bengaluru-Karntaka-India/College-Intern_1211843-2",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Enterpret",
+      "title": "[Backend, Onsite] Software Engineering Intern",
+      "stipendMin": 50000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/enterpret/jobs/7847134003",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "HackerRank",
+      "title": "AI Researcher Intern",
+      "stipendMin": 50000,
+      "stipendMax": 80000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/hackerrank/jobs/8281055",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "HackerRank",
+      "title": "Software Development Engineer Intern",
+      "stipendMin": 50000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/hackerrank/jobs/8229735",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "CloudSEK",
+      "title": "Security Consultant Intern",
+      "stipendMin": 50000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/cloudsek/jobs/6115382004",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Drivetrain",
+      "title": "Engineering Intern – Gen AI for FP&A Platform",
+      "stipendMin": 50000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/drivetrain/bc1c17bc-86ac-4f00-a1e3-0eb85aae4fdc/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "FamPay",
+      "title": "Security Engineer Intern",
+      "stipendMin": 45000,
+      "stipendMax": 65000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/fampay/bbbbbfd2-1855-4991-82d5-84ef57607c24/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Hevo Data",
+      "title": "Associate Software Development Engineer (SDE) Intern",
+      "stipendMin": 45000,
+      "stipendMax": 65000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/hevodata/993a3ed3-3014-432f-b0f4-28d300d58d9a/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Merkle Science",
+      "title": "Software Engineer(Intern)- Backend",
+      "stipendMin": 45000,
+      "stipendMax": 65000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/merklescience/e663b69b-264a-4bd7-b04d-fb3c0a824a28/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Merkle Science",
+      "title": "Software Engineer - Intern (Frontend)",
+      "stipendMin": 45000,
+      "stipendMax": 65000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/merklescience/20675d00-156c-4f3f-a9bf-4cacee176bc2/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Scopely",
+      "title": "Intern-Technical Artist - Royal Lounge Casino",
+      "stipendMin": 45000,
+      "stipendMax": 60000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/scopely/jobs/5440761008",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Drivetrain",
+      "title": "Quality Assurance Engineering (QAE) - Intern",
+      "stipendMin": 45000,
+      "stipendMax": 60000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/drivetrain/edb8a8f7-16ac-4177-bf2e-99c36ab47d5f/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Sarvam AI",
+      "title": "Growth Marketing Intern",
+      "stipendMin": 40000,
+      "stipendMax": 55000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/1eb3008a-2014-4a6c-8a35-cfa7caf8a60f/application",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Enterpret",
+      "title": "Machine Learning Intern",
+      "stipendMin": 40000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/enterpret/jobs/7723230003",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Sarvam AI",
+      "title": "Marketing internship (brand & communication)",
+      "stipendMin": 40000,
+      "stipendMax": 55000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/bba82f34-1544-421e-a393-3edd8a5f4cb2/application",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Micron Technology",
+      "title": "Technician Apprentice",
+      "stipendMin": 40000,
+      "stipendMax": 55000,
+      "durationMonths": 3,
+      "locations": [
+        "Sanand",
+        "Gujarat",
+        "India"
+      ],
+      "applyUrl": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Sanand---303A---ATSSDMOD-India/Technician-Apprentice_JR107694",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "CynLr",
+      "title": "Fresher or Internship Roles",
+      "stipendMin": 40000,
+      "stipendMax": 60000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.ashbyhq.com/cynlr/e49ddbc5-4de3-4d97-94ac-7b37201229d3/application",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "InMobi",
+      "title": "Intern - Creative & Communications, People Team",
+      "stipendMin": 40000,
+      "stipendMax": 55000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/inmobi/jobs/8207411",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Paytm",
+      "title": "Talent Acquisition Intern - IT Recruitment",
+      "stipendMin": 40000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Noida",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/paytm/95eadc2b-27bf-40fe-b6e6-93aaeadd08f7/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "FamPay",
+      "title": "People Operations Intern",
+      "stipendMin": 40000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/fampay/213870db-ddfd-4519-9a57-54691d89cca5/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Hevo Data",
+      "title": "UX Design Intern",
+      "stipendMin": 40000,
+      "stipendMax": 70000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/hevodata/433ffdef-3125-48ed-a131-52c697c321ee/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Project44",
+      "title": "Product Design Intern",
+      "stipendMin": 40000,
+      "stipendMax": 55000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/project44/jobs/8101750",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Truecaller",
+      "title": "Android Engineer Internship",
+      "stipendMin": 35000,
+      "stipendMax": 50000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://unstop.com/internships/android-engineer-internship-truecaller-1532577",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "FamPay",
+      "title": "Copy Intern",
+      "stipendMin": 35000,
+      "stipendMax": 50000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/fampay/23dd18f9-a331-4115-98e9-e98c404c47c6/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Paytm",
+      "title": "Intern- HR Onboarding",
+      "stipendMin": 35000,
+      "stipendMax": 45000,
+      "durationMonths": 3,
+      "locations": [
+        "Noida",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/paytm/0ecd9d93-e4f3-4dd0-a22e-852fec9b6e02/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    },
+    {
+      "company": "Paytm",
+      "title": "Talent Acquisition Intern - Bangalore",
+      "stipendMin": 35000,
+      "stipendMax": 45000,
+      "durationMonths": 3,
+      "locations": [
+        "Bengaluru",
+        "India"
+      ],
+      "applyUrl": "https://jobs.lever.co/paytm/88e8b698-8f03-4e09-9581-168f831fb3af/apply",
+      "lastVerifiedAt": "2026-11-03T21:51:21.966Z"
+    }
+  ],
+  "deadLinks": [
+    {
+      "company": "Hewlett Packard Enterprise (HPE)",
+      "title": "Software Engineering & Cloud Intern",
+      "url": "https://hpe.wd5.myworkdayjobs.com/en-US/Jobsathpe/job/Bengaluru-Karntaka-India/Intern_1211844",
+      "reason": "Workday CXS API: job not found or closed"
+    },
+    {
+      "company": "Rubrik",
+      "title": "Software Engineer (CPD) - Winter Intern",
+      "url": "https://www.rubrik.com/company/careers/departments/job.8166537?gh_jid=8166537",
+      "reason": "HTTP 403"
+    },
+    {
+      "company": "Salesforce",
+      "title": "Summer 2027 Intern - UI/UX Designer",
+      "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Summer-2027-Intern---UI-UX-Designer_JR363342",
+      "reason": "Workday CXS API: job not found or closed"
+    },
+    {
+      "company": "Autodesk",
+      "title": "Software Engineer Intern",
+      "url": "https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/Pune-India/Software-Engineer-Intern_24WD81903",
+      "reason": "Workday CXS API: job not found or closed"
+    },
+    {
+      "company": "S&P Global",
+      "title": "Software Engineering Intern - Commercial Technology",
+      "url": "https://spgi.wd5.myworkdayjobs.com/en-US/SPGI_Careers/job/New-York-NY/Software-Engineering-Intern--Commercial-Technology_326692-2",
+      "reason": "Workday CXS API: job not found or closed"
+    },
+    {
+      "company": "Micron Technology",
+      "title": "Memory Systems & Firmware Intern",
+      "url": "https://micron.wd1.myworkdayjobs.com/en-US/external/job/Hyderabad/Intern---Firmware-Engineer_JR64991",
+      "reason": "Workday CXS API: job not found or closed"
+    },
+    {
+      "company": "Scopely",
+      "title": "Intern - QA Engineer - Royal Lounge Casino",
+      "url": "https://job-boards.greenhouse.io/scopely/jobs/5448999008",
+      "reason": "Greenhouse API returned 404"
+    },
+    {
+      "company": "Groww",
+      "title": "Video Editor Intern",
+      "url": "https://job-boards.eu.greenhouse.io/groww/jobs/4956817101",
+      "reason": "Greenhouse API returned 404"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "title": "Student Intern",
+      "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Noida/Student-Intern_R-10058392",
+      "reason": "Workday CXS API: job not found or closed"
+    },
+    {
+      "company": "Rubrik",
+      "title": "Payroll Industrial Trainee",
+      "url": "https://www.rubrik.com/company/careers/departments/job.8305308?gh_jid=8305308",
+      "reason": "HTTP 403"
+    }
+  ]
+}
