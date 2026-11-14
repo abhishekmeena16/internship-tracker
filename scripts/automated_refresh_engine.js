@@ -19,6 +19,7 @@ import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { isStrictDirectApplicationUrl } from './enforce_100_percent_accurate_apply_links.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -352,6 +353,7 @@ async function scanATSBoards() {
 async function upsertNewCandidates(candidates) {
   let upserted = 0;
   for (const c of candidates) {
+    if (!isStrictDirectApplicationUrl(c.applyUrl)) continue;
     const slug = c.companyName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
     const company = await prisma.company.findUnique({ where: { slug } });
     if (!company) continue;
@@ -422,11 +424,21 @@ async function refreshAndVerify() {
     data: { stipendMin: 45000, stipendMax: 75000 }
   });
 
-  // 3. Ensure all approved company positions are marked OPEN with fresh verification
-  await prisma.internship.updateMany({
-    where: { status: 'CLOSED' },
-    data: { status: 'OPEN', lastVerifiedAt: now }
+  // 3. Ensure only strictly valid direct candidate application URLs remain OPEN
+  const currentOpen = await prisma.internship.findMany({
+    where: { status: 'OPEN' },
+    select: { id: true, applyUrl: true }
   });
+  const genericIds = currentOpen.filter(p => !isStrictDirectApplicationUrl(p.applyUrl)).map(p => p.id);
+  if (genericIds.length > 0) {
+    for (let i = 0; i < genericIds.length; i += 100) {
+      await prisma.internship.updateMany({
+        where: { id: { in: genericIds.slice(i, i + 100) } },
+        data: { status: 'CLOSED' }
+      });
+    }
+    console.log(`  Closed ${genericIds.length} non-direct / generic listings.`);
+  }
 
   // 4. Sample deep verification on open positions
   const sample = await prisma.internship.findMany({
