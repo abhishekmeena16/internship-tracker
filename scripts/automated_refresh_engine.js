@@ -20,6 +20,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { isStrictDirectApplicationUrl } from './enforce_100_percent_accurate_apply_links.js';
+import { isLegitimateInternshipTitle } from './reverify_high_stipend_internships.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,7 +36,7 @@ const CONFIG = {
   BATCH_SIZE: 10,
   BATCH_DELAY_MS: 400,
 
-  MIN_STIPEND: 30000,
+  MIN_STIPEND: 50000,
   MAX_DURATION_MONTHS: 3,
   MIN_DURATION_MONTHS: 2,
 
@@ -276,7 +277,7 @@ async function scanATSBoards() {
       for (const j of (data.jobs || [])) {
         const title = j.title || '';
         const loc = ((j.location?.name || '') + ' ' + (j.offices || []).map(o => o.name).join(' ')).toLowerCase();
-        if (INDIA_LOCATION_RE.test(loc) && INTERN_TITLE_RE.test(title) && !SENIOR_TITLE_RE.test(title)) {
+        if (INDIA_LOCATION_RE.test(loc) && isLegitimateInternshipTitle(title)) {
           candidates.push({
             companyName: conf.name,
             hqCity: conf.hqCity,
@@ -302,7 +303,7 @@ async function scanATSBoards() {
       for (const j of (data.jobs || [])) {
         const title = j.title || '';
         const loc = ((j.location || '') + ' ' + (j.secondaryLocations || []).map(l => l.location).join(' ')).toLowerCase();
-        if (INDIA_LOCATION_RE.test(loc) && INTERN_TITLE_RE.test(title) && !SENIOR_TITLE_RE.test(title)) {
+        if (INDIA_LOCATION_RE.test(loc) && isLegitimateInternshipTitle(title)) {
           candidates.push({
             companyName: b.name,
             hqCity: b.hqCity,
@@ -328,7 +329,7 @@ async function scanATSBoards() {
       for (const j of data) {
         const title = j.text || '';
         const loc = ((j.categories?.location || '') + ' ' + (j.categories?.allLocations || []).join(' ')).toLowerCase();
-        if (INDIA_LOCATION_RE.test(loc) && INTERN_TITLE_RE.test(title) && !SENIOR_TITLE_RE.test(title)) {
+        if (INDIA_LOCATION_RE.test(loc) && isLegitimateInternshipTitle(title)) {
           candidates.push({
             companyName: b.name,
             hqCity: b.hqCity,
@@ -418,26 +419,32 @@ async function refreshAndVerify() {
     data: { durationMonths: 3 }
   });
 
-  // 2. Bulk normalize all stipends to >= 30,000
+  // 2. Close any position with stipend < 50,000 (must be >= 50,000)
   await prisma.internship.updateMany({
-    where: { OR: [{ stipendMin: null }, { stipendMin: { lt: 30000 } }] },
-    data: { stipendMin: 45000, stipendMax: 75000 }
+    where: {
+      status: 'OPEN',
+      OR: [{ stipendMin: null }, { stipendMin: { lt: 50000 } }]
+    },
+    data: { status: 'CLOSED' }
   });
 
-  // 3. Ensure only strictly valid direct candidate application URLs remain OPEN
+  // 3. Close non-intern titles and generic/non-direct URLs
   const currentOpen = await prisma.internship.findMany({
     where: { status: 'OPEN' },
-    select: { id: true, applyUrl: true }
+    select: { id: true, title: true, applyUrl: true }
   });
-  const genericIds = currentOpen.filter(p => !isStrictDirectApplicationUrl(p.applyUrl)).map(p => p.id);
-  if (genericIds.length > 0) {
-    for (let i = 0; i < genericIds.length; i += 100) {
+  const disqualifiedIds = currentOpen
+    .filter(p => !isLegitimateInternshipTitle(p.title) || !isStrictDirectApplicationUrl(p.applyUrl))
+    .map(p => p.id);
+
+  if (disqualifiedIds.length > 0) {
+    for (let i = 0; i < disqualifiedIds.length; i += 100) {
       await prisma.internship.updateMany({
-        where: { id: { in: genericIds.slice(i, i + 100) } },
+        where: { id: { in: disqualifiedIds.slice(i, i + 100) } },
         data: { status: 'CLOSED' }
       });
     }
-    console.log(`  Closed ${genericIds.length} non-direct / generic listings.`);
+    console.log(`  Closed ${disqualifiedIds.length} non-intern or non-direct listings.`);
   }
 
   // 4. Sample deep verification on open positions

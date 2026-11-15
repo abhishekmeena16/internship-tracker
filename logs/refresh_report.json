@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-11-14T13:33:34.417Z",
-  "durationSec": 49.2,
+  "timestamp": "2026-11-15T08:22:05.755Z",
+  "durationSec": 41.1,
   "summary": {
-    "openInternships": 1125,
-    "uniqueCompanies": 411,
-    "newUpserted": 19,
-    "deadLinksClosed": 7
+    "openInternships": 4115,
+    "uniqueCompanies": 1379,
+    "newUpserted": 20,
+    "deadLinksClosed": 1
   }
 }
