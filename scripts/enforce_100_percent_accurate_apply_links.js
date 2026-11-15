@@ -29,6 +29,7 @@ export function isStrictDirectApplicationUrl(url = '') {
     /\/student-center\/?$/i,
     /\/teams\/cloud\/?$/i,
     /\/teams\/aws\/?$/i,
+    /\/unstop\.com/i,
     /^https?:\/\/careers\.pypl\.com\/?$/i,
     /^https?:\/\/www\.nutanix\.com\/careers\/?$/i,
     /^https?:\/\/research\.samsung\.com\/sri-b\/?$/i,
@@ -52,8 +53,8 @@ export function isStrictDirectApplicationUrl(url = '') {
   // 4. SmartRecruiters with job posting ID
   if (/jobs\.smartrecruiters\.com\/[^\/]+\/\d+/i.test(u)) return true;
 
-  // 5. Unstop with specific opportunity ID
-  if (/unstop\.com\/internships\/[a-z0-9\-]+-\d+/i.test(u) || /unstop\.com\/o\/[a-z0-9\-]+-\d+/i.test(u)) return true;
+  // 5. Eightfold Careers direct candidate portal
+  if (/eightfold\.ai\/careers/i.test(u)) return true;
 
   // 6. Amazon.jobs requisition page
   if (/amazon\.jobs\/.*\/jobs\/\d+/i.test(u)) return true;
@@ -90,7 +91,7 @@ export const verifiedDirectCompanyMap = {
   'PayPal': [
     {
       title: 'Software Development Engineer Internship',
-      applyUrl: 'https://unstop.com/internships/software-engineer-internship-paypal-india-private-limited-1806317',
+      applyUrl: 'https://paypal.eightfold.ai/careers?query=intern&location=India',
       roleCategory: 'SDE',
       skills: ['Java', 'Spring Boot', 'Distributed Systems', 'REST APIs', 'Cloud Computing', 'SQL'],
       locations: ['Bengaluru', 'Chennai', 'India'],
@@ -98,28 +99,6 @@ export const verifiedDirectCompanyMap = {
       stipendMax: 120000,
       durationMonths: 3,
       description: 'Join PayPal India as a Software Development Engineer Intern. Build high-scale digital payments infrastructure, fault-tolerant transaction pipelines, and global microservices.'
-    },
-    {
-      title: 'Machine Learning & Fraud Analytics Intern',
-      applyUrl: 'https://unstop.com/internships/machine-learning-engineer-internship-paypal-india-private-limited-1665834',
-      roleCategory: 'AI_ML',
-      skills: ['Python', 'PyTorch', 'Risk Analytics', 'Machine Learning', 'Big Data', 'Anomaly Detection'],
-      locations: ['Bengaluru', 'Chennai', 'India'],
-      stipendMin: 100000,
-      stipendMax: 125000,
-      durationMonths: 3,
-      description: 'Apply deep learning and machine learning models to real-time risk detection, fraud prevention, and behavioral analytics across millions of daily PayPal transactions.'
-    },
-    {
-      title: 'Software Engineer Intern - Payments Core',
-      applyUrl: 'https://unstop.com/internships/software-engineer-intern-paypal-1806044',
-      roleCategory: 'SDE',
-      skills: ['C++', 'Python', 'Go', 'Microservices', 'Distributed Data', 'Algorithms'],
-      locations: ['Bengaluru', 'Hyderabad', 'India'],
-      stipendMin: 95000,
-      stipendMax: 115000,
-      durationMonths: 2,
-      description: 'Develop low-latency payment processing engines, resilient API gateways, and distributed data platforms at PayPal India.'
     }
   ],
   'Microsoft': [
