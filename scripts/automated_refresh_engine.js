@@ -428,13 +428,21 @@ async function refreshAndVerify() {
     data: { status: 'CLOSED' }
   });
 
-  // 3. Close non-intern titles and generic/non-direct URLs
+  // 3. Close non-intern titles, generic/non-direct URLs, and roles outside India
   const currentOpen = await prisma.internship.findMany({
     where: { status: 'OPEN' },
-    select: { id: true, title: true, applyUrl: true }
+    select: { id: true, title: true, applyUrl: true, locations: true }
   });
+  const foreignPattern = /\b(san francisco|new york|seattle|sunnyvale|austin|chicago|los angeles|boston|london|dublin|toronto|vancouver|singapore|tokyo|sydney|zurich|munich|berlin|united states|united kingdom|canada|australia|germany|france|netherlands|ireland)\b/i;
+  const indiaPattern = /\b(india|bengaluru|bangalore|hyderabad|pune|noida|gurugram|gurgaon|chennai|mumbai|delhi|sanand)\b/i;
+
   const disqualifiedIds = currentOpen
-    .filter(p => !isLegitimateInternshipTitle(p.title) || !isStrictDirectApplicationUrl(p.applyUrl))
+    .filter(p => {
+      if (!isLegitimateInternshipTitle(p.title) || !isStrictDirectApplicationUrl(p.applyUrl)) return true;
+      const locStr = (p.locations || []).join(' ');
+      if (foreignPattern.test(locStr) || !indiaPattern.test(locStr)) return true;
+      return false;
+    })
     .map(p => p.id);
 
   if (disqualifiedIds.length > 0) {
