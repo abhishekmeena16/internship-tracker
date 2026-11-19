@@ -62,6 +62,9 @@ export async function triggerLiveSync(reason = 'MANUAL') {
     const report = await runFullRefresh();
 
     lastRunAt = new Date();
+    let intervalMin = 30;
+    if (process.env.SYNC_INTERVAL_MINUTES) intervalMin = Number(process.env.SYNC_INTERVAL_MINUTES) || 30;
+    nextRunAt = new Date(Date.now() + intervalMin * 60 * 1000);
     lastResult = {
       status: 'SUCCESS',
       openInternships: report.summary.openInternships,

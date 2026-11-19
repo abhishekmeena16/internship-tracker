@@ -31,10 +31,10 @@ const prisma = new PrismaClient();
 // ============================================================================
 
 const CONFIG = {
-  HTTP_TIMEOUT_MS: 10000,
-  HTTP_RETRY_TIMEOUT_MS: 15000,
-  BATCH_SIZE: 10,
-  BATCH_DELAY_MS: 400,
+  HTTP_TIMEOUT_MS: 4000,
+  HTTP_RETRY_TIMEOUT_MS: 6000,
+  BATCH_SIZE: 12,
+  BATCH_DELAY_MS: 150,
 
   MIN_STIPEND: 50000,
   MAX_DURATION_MONTHS: 3,
