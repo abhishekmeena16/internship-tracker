@@ -19,7 +19,7 @@ import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { isStrictDirectApplicationUrl } from './enforce_100_percent_accurate_apply_links.js';
+import { isStrictDirectApplicationUrl, verifiedDirectCompanyMap } from './enforce_100_percent_accurate_apply_links.js';
 import { isLegitimateInternshipTitle } from './reverify_high_stipend_internships.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -343,6 +343,29 @@ async function scanATSBoards() {
     } catch {}
   });
 
+  // Amazon.jobs India Live Search
+  try {
+    const amzRes = await fetch(
+      'https://www.amazon.jobs/en/search.json?base_query=intern&country=IND&result_limit=25',
+      { signal: AbortSignal.timeout(6000) }
+    );
+    if (amzRes.ok) {
+      const amzData = await amzRes.json();
+      for (const j of (amzData.jobs || [])) {
+        if (isLegitimateInternshipTitle(j.title)) {
+          candidates.push({
+            companyName: 'Amazon',
+            hqCity: 'Bengaluru',
+            ats: 'AMAZON',
+            title: j.title,
+            applyUrl: `https://www.amazon.jobs${j.job_path}`,
+            sourceJobId: `amz-${j.id_icims || j.job_path.split('/').pop()}`
+          });
+        }
+      }
+    }
+  } catch {}
+
   console.log(`  📊 Discovered ${candidates.length} active positions from ATS scan.\n`);
   return candidates;
 }
@@ -356,7 +379,31 @@ async function upsertNewCandidates(candidates) {
   for (const c of candidates) {
     if (!isStrictDirectApplicationUrl(c.applyUrl)) continue;
     const slug = c.companyName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-    const company = await prisma.company.findUnique({ where: { slug } });
+    let company = await prisma.company.findFirst({
+      where: {
+        OR: [
+          { slug },
+          { name: { equals: c.companyName, mode: 'insensitive' } }
+        ]
+      }
+    });
+
+    if (!company) {
+      try {
+        company = await prisma.company.create({
+          data: {
+            name: c.companyName,
+            slug,
+            sector: 'Software & Technology Innovation',
+            hqCity: c.hqCity || 'Bengaluru',
+            careerUrl: c.applyUrl,
+            atsType: c.ats || 'CUSTOM'
+          }
+        });
+      } catch {
+        company = await prisma.company.findFirst({ where: { slug } });
+      }
+    }
     if (!company) continue;
 
     const dedupHash = crypto.createHash('sha256')
@@ -520,12 +567,90 @@ async function generateReport(upsertRes, verifyRes, startTime) {
 // MAIN PIPELINE
 // ============================================================================
 
+async function syncVerifiedDirectRoles() {
+  console.log('┌─────────────────────────────────────────────────────────┐');
+  console.log('│  STEP 0: Syncing Verified Direct Tech Roles (>= ₹50,000)│');
+  console.log('└─────────────────────────────────────────────────────────┘\n');
+
+  let synced = 0;
+  for (const [compName, roles] of Object.entries(verifiedDirectCompanyMap)) {
+    const cleanSlug = compName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    let comp = await prisma.company.findFirst({
+      where: {
+        OR: [
+          { name: { equals: compName, mode: 'insensitive' } },
+          { slug: cleanSlug }
+        ]
+      }
+    });
+
+    if (!comp) {
+      comp = await prisma.company.create({
+        data: {
+          name: compName,
+          slug: cleanSlug,
+          sector: 'Software & Technology Innovation',
+          hqCity: 'Bengaluru',
+          careerUrl: roles[0]?.applyUrl || 'https://www.google.com',
+          atsType: 'CUSTOM'
+        }
+      });
+    }
+
+    for (const r of roles) {
+      if (r.stipendMin < 50000) continue;
+      const now = new Date();
+      const dedupHash = crypto.createHash('sha256').update(`${comp.slug}|${r.applyUrl}`).digest('hex');
+
+      await prisma.internship.upsert({
+        where: { dedupHash },
+        update: {
+          title: r.title,
+          status: 'OPEN',
+          roleCategory: r.roleCategory,
+          stipendMin: r.stipendMin,
+          stipendMax: r.stipendMax,
+          durationMonths: r.durationMonths || 3,
+          locations: r.locations,
+          skills: r.skills,
+          description: r.description,
+          applyUrl: r.applyUrl,
+          lastSeenAt: now,
+          lastVerifiedAt: now
+        },
+        create: {
+          companyId: comp.id,
+          title: r.title,
+          status: 'OPEN',
+          roleCategory: r.roleCategory,
+          stipendMin: r.stipendMin,
+          stipendMax: r.stipendMax,
+          durationMonths: r.durationMonths || 3,
+          locations: r.locations,
+          skills: r.skills,
+          description: r.description,
+          applyUrl: r.applyUrl,
+          source: 'DIRECT_REQUISITION',
+          sourceJobId: `direct-${comp.slug}-${Date.now() % 1000000}`,
+          firstSeenAt: now,
+          lastSeenAt: now,
+          lastVerifiedAt: now,
+          dedupHash
+        }
+      });
+      synced++;
+    }
+  }
+  console.log(`  ✓ Synced ${synced} verified direct tech roles.\n`);
+}
+
 export async function runFullRefresh() {
   const startTime = Date.now();
   console.log('\n╔═══════════════════════════════════════════════════════════════╗');
   console.log('║  💎 AUTOMATED INTERNSHIP REFRESH ENGINE v3.0 (1000+ COs)      ║');
   console.log('╚═══════════════════════════════════════════════════════════════╝\n');
 
+  await syncVerifiedDirectRoles();
   const candidates = await scanATSBoards();
   const upsertRes = await upsertNewCandidates(candidates);
   const verifyRes = await refreshAndVerify();
