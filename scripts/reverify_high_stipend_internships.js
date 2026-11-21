@@ -17,6 +17,12 @@ export function isLegitimateInternshipTitle(title = '') {
   // Explicit exclude patterns (senior/full-time corporate roles)
   const nonInternExclude = /\b(senior|staff|principal|lead|director|manager|head of|vp|operations associate|recruitment coordinator|leadership development program|graduate program|full-time|associate product manager ii|engineer ii|engineer iii|executive|general manager)\b/i;
 
+  // Non-tech / non-engineering exclusions
+  const nonTechExclude = /\b(human resources|hr\b|talent acquisition|recruiting|recruiter|people operations|people experience|payroll|sales\b|marketing\b|business development|bdr\b|sdr\b|content writing|social media|legal\b|accountant|accounting|finance intern)\b/i;
+  if (nonTechExclude.test(t)) {
+    return false;
+  }
+
   // Must match intern/trainee/student/coop keywords
   const internKeywords = /\b(intern|internship|co-op|coop|trainee|apprentice|fellow|fellowship|summer analyst|student)\b/i;
 

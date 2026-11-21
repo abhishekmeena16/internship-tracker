@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { prisma } from '../lib/prisma.js';
 import { validatePagination, parseIntSafe } from '../middleware/validate.js';
+import { getSchedulerStatus, triggerLiveSync } from '../services/scheduler.js';
 
 const router = Router();
 
@@ -10,6 +11,21 @@ const router = Router();
  */
 router.get('/', async (req, res, next) => {
   try {
+    // ── STALE-WHILE-REVALIDATE: Auto-sync newly opened roles if stale (> 15m) ──
+    try {
+      const sched = getSchedulerStatus();
+      const STALE_THRESHOLD_MS = 15 * 60 * 1000;
+      const isStale = !sched.lastRunAt || (Date.now() - new Date(sched.lastRunAt).getTime() > STALE_THRESHOLD_MS);
+      if (isStale && !sched.isRunning) {
+        console.log(`[Auto-Sync] Data is older than 15 mins (or not yet run). Triggering automated background refresh...`);
+        triggerLiveSync('STALE_AUTO_REVALIDATE').catch(err => {
+          console.error('[Auto-Sync] Automated refresh error:', err.message);
+        });
+      }
+    } catch (schedErr) {
+      // Non-blocking
+    }
+
     const {
       q, role, location, remote, minStipend, duration, company, degree,
       status = 'OPEN', sort
@@ -191,6 +207,7 @@ router.get('/', async (req, res, next) => {
     ]);
 
     const totalPages = Math.ceil(total / limit) || 1;
+    const sched = getSchedulerStatus();
 
     res.json({
       data: internships,
@@ -199,6 +216,12 @@ router.get('/', async (req, res, next) => {
         limit,
         total,
         totalPages
+      },
+      meta: {
+        lastRefreshedAt: sched.lastRunAt,
+        nextRefreshAt: sched.nextRunAt,
+        isRefreshing: sched.isRunning,
+        intervalMinutes: sched.intervalMinutes
       }
     });
   } catch (error) {

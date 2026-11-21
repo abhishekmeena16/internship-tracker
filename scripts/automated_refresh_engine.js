@@ -212,12 +212,8 @@ async function deepVerifyUrl(url) {
           return { ok: false, reason: `HTTP ${res.status} Not Found` };
         }
 
-        // 200..399 or 403 (Cloudflare protected portal like Workday) = reachable
-        if ((res.status >= 200 && res.status < 400) || res.status === 403) {
-          if (res.status === 403) {
-            return { ok: true, reason: 'HTTP 403 (Protected portal, active)' };
-          }
-
+        // 200..399 or 403 on protected enterprise portals (Workday, Eightfold) = reachable
+        if (res.status >= 200 && res.status < 400) {
           const body = await res.text();
           for (const pattern of CLOSED_BODY_PATTERNS) {
             if (pattern.test(body)) {
@@ -225,6 +221,13 @@ async function deepVerifyUrl(url) {
             }
           }
           return { ok: true, reason: `HTTP ${res.status} OK` };
+        }
+
+        if (res.status === 403) {
+          if (/myworkdayjobs\.com|eightfold\.ai|oraclecloud\.com/i.test(url)) {
+            return { ok: true, reason: 'HTTP 403 (Protected enterprise ATS, active)' };
+          }
+          return { ok: false, reason: 'HTTP 403 Forbidden' };
         }
       } catch (e) {
         if (attempt === 1) return { ok: true, reason: `Network timeout (kept active)` };
